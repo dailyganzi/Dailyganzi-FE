@@ -138,3 +138,7 @@ a {
   cursor: pointer;
   color: inherit;
 }
+
+* {
+  box-sizing: border-box;
+}
