@@ -1,0 +1,132 @@
+@import "./reset.css";
+* {
+  font-family: "Spoqa Han Sans Neo";
+}
+
+body {
+  background-color: #232323;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  width: 390px;
+  height: 844px;
+  padding: 0px 15px;
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.25s;
+}
+
+.title h1 {
+  margin-top: 50px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.con-wrap {
+  width: 100%;
+  margin-top: 30px;
+}
+.con-wrap h2 {
+  margin-left: 5px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #646464;
+}
+
+.bar-wrap {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 0 15px;
+  transition: background-color 0.25s;
+}
+
+.con {
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #646464;
+}
+.con span {
+  font-weight: 500;
+  color: #000000;
+  transition: color 0.25s;
+}
+
+.con:last-child {
+  border-bottom: none;
+}
+
+.toggle {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.toggle-switch {
+  display: inline-block;
+  background: #ccc;
+  border-radius: 16px;
+  width: 58px;
+  height: 32px;
+  position: relative;
+  vertical-align: middle;
+  transition: background-color 0.25s;
+}
+
+.toggle-switch::before, .toggle-switch::after {
+  content: "";
+}
+
+.toggle-switch::before {
+  display: block;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: left 0.25s, background-color 0.25s;
+}
+
+.toggle-checkbox:checked + .toggle-switch {
+  background: #FFB45D;
+}
+
+.toggle-checkbox:checked + .toggle-switch::before {
+  left: 30px;
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+.dark-mode .wrap {
+  background-color: #2d2d2d;
+  color: #ffffff;
+}
+.dark-mode h2 {
+  color: #dfdfdf;
+}
+.dark-mode .bar-wrap {
+  background-color: #3c3c3c;
+}
+.dark-mode .bar-wrap span {
+  color: #F2F2F2;
+}
+.dark-mode .fa-solid {
+  color: #fd5e5e;
+}
+.dark-mode .toggle-switch::before {
+  background-color: #646464;
+}
+
+.enlarged {
+  font-size: 1.2em;
+}/*# sourceMappingURL=settings.css.map */
