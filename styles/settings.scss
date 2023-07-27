@@ -1,5 +1,12 @@
 @import "./reset.css";
 @import 'variables/color';
+$main-color: #ffb45c;
+$second-color: #ffebd3;
+$txt-color: #222222;
+$gray-txt-color: #828282;
+$bg-color: #f2f2f2;
+$field-color: #ffffff;
+$gray-field-color: #ebebeb;
 
 * {
     font-family: 'Spoqa Han Sans Neo';
@@ -10,14 +17,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .wrap{
     width: 390px;
     height: 844px;
     padding: 0px 15px;
-    background-color: #F2F2F2;
+    background-color: $bg-color;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,7 +41,6 @@ body{
 
 .con-wrap{
     width: 100%;
-    // border: 1px solid gray;
     margin-top: 30px;
 
     h2{
@@ -43,25 +48,24 @@ body{
         margin-bottom: 15px;
         font-size: 18px;
         font-weight: bold;
-        color: #646464;
+        color: $gray-txt-color;
         // transition: color 0.25s;
     }
 }
 
 .bar-wrap{
-    background-color: #ffffff;
+    background-color: $field-color;
     border-radius: 15px;
     padding: 0 15px;
     transition: background-color 0.25s;
 }
-
 
 .con{
     height: 52px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #646464;
+    border-bottom: 1px solid $gray-txt-color;
 
     span{
         font-weight: 500;
@@ -74,14 +78,7 @@ body{
   border-bottom: none;
 }
 
-
 //  toggle button
-
-// *,
-// *:before,
-// *:after {
-//   box-sizing: border-box;
-// }
 
 .toggle {
   cursor: pointer;
@@ -105,7 +102,7 @@ body{
 
 .toggle-switch::before {
   display: block;
-  background-color: #ffffff;
+  background-color: $field-color;
   border-radius: 50%;
   width: 24px;
   height: 24px;
@@ -116,7 +113,7 @@ body{
 }
 
 .toggle-checkbox:checked + .toggle-switch {
-  background: #FFB45D;
+  background: $main-color;
 }
 .toggle-checkbox:checked + .toggle-switch::before {
   left: calc(100% - 28px);
