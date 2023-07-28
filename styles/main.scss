@@ -83,13 +83,18 @@ body {
     li {
       a {
         display: inline-block;
+        position: relative;
+        padding: 25px;
         width: 100%;
         height: 100%;
-        padding: 25px;
-        background-color: $gray-field-color;
+        overflow: hidden;
         border-radius: 20px;
         font-size: 20px;
         font-weight: bold;
+        background-color: $gray-field-color;
+        background-position: bottom 15px right 15px;
+        background-repeat: no-repeat;
+        background-size: 50%;
       }
     }
   }
