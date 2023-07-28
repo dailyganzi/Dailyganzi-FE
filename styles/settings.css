@@ -49,6 +49,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 1;
   padding: 0 15px;
   background-color: #ffffff;
   transition: background-color 0.25s;
@@ -59,7 +61,18 @@ body {
   transition: color 0.25s;
 }
 
-#login-out {
+#push-alarm-bar::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 0;
+  width: 330px;
+  height: 100%;
+  border-top: 1px solid #828282;
+  border-bottom: 1px solid #828282;
+}
+
+#login-out-bar {
   border-radius: 15px;
 }
 
