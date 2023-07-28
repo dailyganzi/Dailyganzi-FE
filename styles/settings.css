@@ -40,10 +40,8 @@ body {
 }
 
 .bar-wrap {
-  background-color: #ffffff;
-  border-radius: 15px;
-  padding: 0 15px;
-  transition: background-color 0.25s;
+  display: flex;
+  flex-direction: column;
 }
 
 .con {
@@ -51,7 +49,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #828282;
+  padding: 0 15px;
+  background-color: #ffffff;
+  transition: background-color 0.25s;
 }
 .con span {
   font-weight: 500;
@@ -59,8 +59,17 @@ body {
   transition: color 0.25s;
 }
 
+#login-out {
+  border-radius: 15px;
+}
+
+.con:first-child {
+  border-radius: 15px 15px 0 0;
+}
+
 .con:last-child {
   border-bottom: none;
+  border-radius: 0 0 15px 15px;
 }
 
 .toggle {
@@ -114,10 +123,10 @@ body {
 .dark-mode h2 {
   color: #f2f2f2;
 }
-.dark-mode .bar-wrap {
+.dark-mode .con {
   background-color: #373737;
 }
-.dark-mode .bar-wrap span {
+.dark-mode .con span {
   color: #f2f2f2;
 }
 .dark-mode .fa-solid {

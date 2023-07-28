@@ -48,10 +48,8 @@ body{
 }
 
 .bar-wrap{
-  background-color: $field-color;
-  border-radius: 15px;
-  padding: 0 15px;
-  transition: background-color 0.25s;
+  display: flex;
+  flex-direction: column;
 }
 
 .con{
@@ -59,7 +57,10 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid $gray-txt-color;
+  // border-bottom: 1px solid $gray-txt-color;
+  padding: 0 15px;
+  background-color: $field-color;
+  transition: background-color 0.25s;
 
   span {
     font-weight: 500;
@@ -68,8 +69,17 @@ body{
   }
 }
 
+#login-out{
+  border-radius: 15px;
+}
+
+.con:first-child{
+  border-radius: 15px 15px 0 0;
+}
+
 .con:last-child{
   border-bottom: none;
+  border-radius: 0 0 15px 15px;
 }
 
 //  toggle button
@@ -128,7 +138,7 @@ body{
     color: $bg-color;
   }
 
-  .bar-wrap{
+  .con{
     background-color: $dark-field-color;
 
     span{
