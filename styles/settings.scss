@@ -1,11 +1,11 @@
 @import "./reset.css";
 @import 'variables/color';
 $dark-bg-color : #2d2d2d;
-$dark-field-color: #3a3a3a;
+$dark-field-color: #373737;
 $toggle-bg-color: #ccc;
 
 * {
-    font-family: 'Spoqa Han Sans Neo';
+  font-family: 'Spoqa Han Sans Neo';
 }
 
 body{
@@ -37,7 +37,6 @@ body{
 .con-wrap{
   width: 100%;
   margin-top: 30px;
-
     h2{
       margin-left: 5px;
       margin-bottom: 15px;
@@ -62,11 +61,11 @@ body{
   align-items: center;
   border-bottom: 1px solid $gray-txt-color;
 
-    span{
-      font-weight: 500;
-      color: #000000;
-      transition: color 0.25s;
-    }
+  span {
+    font-weight: 500;
+    color: #000000;
+    transition: color 0.25s;
+  }
 }
 
 .con:last-child{
@@ -74,7 +73,6 @@ body{
 }
 
 //  toggle button
-
 .toggle {
   cursor: pointer;
   display: inline-block;
@@ -149,5 +147,15 @@ body{
 
 // enlarged
 .enlarged{
-  font-size: 1.2em;
+  .title h1{
+    font-size: 26px;
+  }
+
+  .con-wrap h2{
+    font-size: 21px;
+  }
+
+  .bar-wrap .con span{
+    font-size: 18px;
+  }
 }
