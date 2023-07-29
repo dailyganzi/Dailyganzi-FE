@@ -27,6 +27,26 @@ largerTextButton.addEventListener("click", () => {
   enlargedAction();
 });
 
+// 푸시알림 설정
+let count = 1;
+function setAlarmAction(){
+  if (count === 0) {
+    pushAlarmButton.checked = false;
+    count = 1;
+    } else {
+      pushAlarmButton.checked = true;
+      count = 0;
+    }
+  }
+
+pushAlarmBar.addEventListener("click", () => {
+  setAlarmAction();
+});
+
+changeModeButton.addEventListener("click", () => {
+  setAlarmAction();
+});
+
 // 다크 테마 적용
 function modeChangedAction() {
   if (document.body.classList.contains('dark-mode')) {
