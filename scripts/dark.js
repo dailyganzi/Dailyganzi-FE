@@ -43,7 +43,7 @@ pushAlarmBar.addEventListener("click", () => {
   setAlarmAction();
 });
 
-changeModeButton.addEventListener("click", () => {
+pushAlarmButton.addEventListener("click", () => {
   setAlarmAction();
 });
 
