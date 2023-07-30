@@ -34,8 +34,8 @@ function setAlarmAction(){
     pushAlarmButton.checked = false;
     count = 1;
     } else {
-      pushAlarmButton.checked = true;
-      count = 0;
+    pushAlarmButton.checked = true;
+    count = 0;
     }
   }
 
@@ -60,8 +60,8 @@ function modeChangedAction() {
 
 changeModeButton.addEventListener("click", () => {
   modeChangedAction();
-  });
+});
   
 darkThemeBar.addEventListener("click", () => {
   modeChangedAction();
-  });
+});

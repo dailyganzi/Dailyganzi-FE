@@ -10,6 +10,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  user-select: none;
 }
 
 .wrap{
@@ -162,7 +163,7 @@ body{
     background-color: $dark-field-color;
 
     span{
-      color: $bg-color;
+    color: $bg-color;
     }
   }
 
@@ -173,5 +174,16 @@ body{
 
 // enlarged
 .enlarged{
-  font-size: 1.15em;
+  .title h1{
+    font-size: 27px;
+  }
+
+  .con-wrap h2{
+    font-size: 21px;
+  }
+
+  span{
+    font-size: 18px;
+  }
+
 }

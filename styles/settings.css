@@ -5,6 +5,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .wrap {
@@ -153,6 +156,12 @@ body {
   background-color: #373737;
 }
 
-.enlarged {
-  font-size: 1.15em;
+.enlarged .title h1 {
+  font-size: 27px;
+}
+.enlarged .con-wrap h2 {
+  font-size: 21px;
+}
+.enlarged span {
+  font-size: 18px;
 }/*# sourceMappingURL=settings.css.map */
