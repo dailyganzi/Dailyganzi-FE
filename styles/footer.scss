@@ -1,0 +1,91 @@
+@import "./reset.css";
+@import 'variables/color';
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #646464;
+  font-family: 'Spoqa Han Sans Neo';
+  position: relative;
+}
+
+footer{
+  width: 390px;
+  height: 59px;
+  background-color: $field-color;
+  display: flex;
+  // position: absolute;
+  // bottom: 80px;
+}
+
+.bottom-bar{
+  width: 130px;
+  height: 100%;
+  border: 0;
+  background-color: transparent;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.25s;
+  
+  span{
+    margin-top: 1px;
+    font-size: 12px;
+    font-weight: 400;
+    color: $gray-txt-color;
+    transition: color 0.25s;
+  }
+
+  div{
+    width: 24px;
+    height: 24px;
+    transition: background-image 0.25s;
+  }
+}
+
+.bottom-bar.active{
+  span{
+    color: $main-color;
+  }
+}
+
+.bottom-bar:active{
+  span{
+    color: $main-color;
+  }
+}
+
+#feed div{
+  background-image: url('../images/home.png');
+}
+
+#mark div{
+  background-image: url('../images/favorite.png');
+}
+
+#settings div{
+  background-image: url('../images/settings.png');
+}
+
+#feed.active{
+  div{
+    background-image: url('../images/colored-home.png');
+    }
+  }
+
+#mark.active{
+  div{
+    background-image: url('../images/colored-favorite.png');
+    }
+  }
+
+#settings:active{
+  div{
+    background-image: url('../images/colored-settings.png');
+    }
+  }
+  
+

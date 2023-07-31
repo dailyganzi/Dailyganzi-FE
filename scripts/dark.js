@@ -1,4 +1,4 @@
-const wrap = document.querySelector(".wrap");
+const wrap = document.querySelector(".wrapper");
 
 const largerTextButton = document.querySelector("#larger-text input");
 const pushAlarmButton = document.querySelector("#push-alarm-bar input")
