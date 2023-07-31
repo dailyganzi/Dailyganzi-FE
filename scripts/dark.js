@@ -1,4 +1,4 @@
-const wrap = document.querySelector(".wrapper");
+const body = document.body;
 
 const largerTextButton = document.querySelector("#larger-text input");
 const pushAlarmButton = document.querySelector("#push-alarm-bar input")
@@ -10,11 +10,11 @@ const darkThemeBar = document.getElementById("dark-theme-bar");
 
 // 글씨 크게 보기
 function enlargedAction(){
-  if (wrap.classList.contains("enlarged")) {
-    wrap.classList.remove("enlarged");
+  if (body.classList.contains("enlarged")) {
+    body.classList.remove("enlarged");
     largerTextButton.checked = false;
     } else {
-      wrap.classList.add("enlarged");
+      body.classList.add("enlarged");
       largerTextButton.checked = true;
     }
   }
@@ -49,11 +49,11 @@ pushAlarmButton.addEventListener("click", () => {
 
 // 다크 테마 적용
 function modeChangedAction() {
-  if (document.body.classList.contains('dark-mode')) {
-    document.body.classList.remove("dark-mode");
+  if (body.classList.contains('dark-mode')) {
+    body.classList.remove("dark-mode");
     changeModeButton.checked = false;
     } else {
-      document.body.classList.add("dark-mode");
+      body.classList.add("dark-mode");
       changeModeButton.checked = true;
     }
   }
