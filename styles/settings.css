@@ -155,6 +155,9 @@ body {
 .dark-mode .toggle-switch::before {
   background-color: #373737;
 }
+.dark-mode footer {
+  background-color: #373737;
+}
 
 .enlarged .title h1 {
   font-size: 27px;

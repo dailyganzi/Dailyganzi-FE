@@ -5,7 +5,6 @@ body {
   align-items: center;
   background-color: #646464;
   font-family: "Spoqa Han Sans Neo";
-  position: relative;
 }
 
 footer {
@@ -13,6 +12,9 @@ footer {
   height: 59px;
   background-color: #ffffff;
   display: flex;
+  position: absolute;
+  bottom: 0;
+  transition: background-color 0.25s;
 }
 
 .bottom-bar {
@@ -23,6 +25,7 @@ footer {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,14 +45,6 @@ footer {
   transition: background-image 0.25s;
 }
 
-.bottom-bar.active span {
-  color: #ffb45c;
-}
-
-.bottom-bar:active span {
-  color: #ffb45c;
-}
-
 #feed div {
   background-image: url("../images/home.png");
 }
@@ -62,6 +57,10 @@ footer {
   background-image: url("../images/settings.png");
 }
 
+.bottom-bar.active span {
+  color: #ffb45c;
+}
+
 #feed.active div {
   background-image: url("../images/colored-home.png");
 }
@@ -70,6 +69,6 @@ footer {
   background-image: url("../images/colored-favorite.png");
 }
 
-#settings:active div {
+#settings.active div {
   background-image: url("../images/colored-settings.png");
 }/*# sourceMappingURL=footer.css.map */

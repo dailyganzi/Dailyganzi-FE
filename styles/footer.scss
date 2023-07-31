@@ -7,7 +7,6 @@ body{
   align-items: center;
   background-color: #646464;
   font-family: 'Spoqa Han Sans Neo';
-  position: relative;
 }
 
 footer{
@@ -15,8 +14,9 @@ footer{
   height: 59px;
   background-color: $field-color;
   display: flex;
-  // position: absolute;
-  // bottom: 80px;
+  position: absolute;
+  bottom: 0;
+  transition: background-color 0.25s;
 }
 
 .bottom-bar{
@@ -25,6 +25,8 @@ footer{
   border: 0;
   background-color: transparent;
   user-select: none;
+  cursor: pointer;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,18 +48,6 @@ footer{
   }
 }
 
-.bottom-bar.active{
-  span{
-    color: $main-color;
-  }
-}
-
-.bottom-bar:active{
-  span{
-    color: $main-color;
-  }
-}
-
 #feed div{
   background-image: url('../images/home.png');
 }
@@ -70,10 +60,17 @@ footer{
   background-image: url('../images/settings.png');
 }
 
+.bottom-bar.active{
+  span{
+    color: $main-color;
+  }
+}
+
 #feed.active{
   div{
     background-image: url('../images/colored-home.png');
     }
+    
   }
 
 #mark.active{
@@ -82,7 +79,7 @@ footer{
     }
   }
 
-#settings:active{
+#settings.active{
   div{
     background-image: url('../images/colored-settings.png');
     }
