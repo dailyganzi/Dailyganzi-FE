@@ -92,11 +92,15 @@
     justify-content: right;
 
     button {
+      width: 28px;
+      height: 33px;
       padding: 0;
+
+      cursor: pointer;
       border: 0;
       border-radius: 50%;
       background-color: transparent;
-      cursor: pointer;
+      background-repeat: no-repeat;
       transform: none;
       transition: all 0.3s;
 
@@ -105,11 +109,12 @@
       }
     }
 
+    .share {
+      background-image: url(/asset/images/share.svg);
+    }
+
     .star {
-      width: 28px;
-      height: 33px;
       background-image: url(/asset/images/star.svg);
-      background-repeat: no-repeat;
 
       &.active {
         background-image: url(/asset/images/star_active.svg);

@@ -1,7 +1,7 @@
 /**
  * @todo 이후 백엔드 API 완성 시 알맞게 데이터 수정 필요
  */
-const createCard = (data) => {
+const createCard = (target, data) => {
   const { keyword, image, summary, related } = data;
 
   const card = document.createElement("article");
@@ -24,7 +24,8 @@ const createCard = (data) => {
   // 액션 버튼들
   const divActions = createActions();
 
-  card.append(h2Title, imgPreview, divSummary, divRelated);
+  card.append(h2Title, imgPreview, divSummary, divRelated, divActions);
+  target.appendChild(card);
 };
 
 const createSummary = (summary) => {
@@ -51,8 +52,8 @@ const createSummary = (summary) => {
 
 const createRelated = (related) => {
   const divRelated = document.createElement("div");
-  divRelated.classList.add("Related");
-  divRelated.id = "Related";
+  divRelated.classList.add("related");
+  divRelated.id = "related";
 
   const heading = document.createElement("p");
   heading.classList.add("heading");
@@ -123,4 +124,53 @@ const createActions = () => {
   return divActions;
 };
 
-export default createCard;
+// 완성된 구조
+/* <article class="topic-card">
+  <h2>제목</h2>
+  <img class="related-img" src="http://via.placeholder.com/640x480" alt="" />
+  <div class="summary" id="summary">
+    <p class="heading">요약</p>
+    <ul>
+      <li>요약1</li>
+      <li>요약2</li>
+      <li>요약3</li>
+    </ul>
+  </div>
+  <div class="related" id="related">
+    <p class="heading">관련 기사 보기</p>
+    <ul>
+      <li>
+        <a href="#">
+          <p class="press">언론사</p>
+          <p class="title">기사 제목</p>
+          <div class="preview">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            vitae cum repudiandae odit soluta voluptatibus optio, illum harum
+            voluptates. Recusandae doloribus atque doloremque aperiam laborum
+            tenetur, molestiae ipsa corrupti aliquam.
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <p class="press">언론사</p>
+          <p class="title">기사 제목</p>
+          <div class="preview">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            vitae cum repudiandae odit soluta voluptatibus optio, illum harum
+            voluptates. Recusandae doloribus atque doloremque aperiam laborum
+            tenetur, molestiae ipsa corrupti aliquam.
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="actions">
+    <button class="share" id="share">
+      <span class="a11y-hidden">링크로 이 토픽 공유하기</span>
+    </button>
+    <button class="star" id="star">
+      <span class="a11y-hidden">즐겨찾기 등록</span>
+    </button>
+  </div>
+</article>; */

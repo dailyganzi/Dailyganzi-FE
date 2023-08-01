@@ -122,22 +122,25 @@ body {
   justify-content: right;
 }
 .topic-card .actions button {
+  width: 28px;
+  height: 33px;
   padding: 0;
+  cursor: pointer;
   border: 0;
   border-radius: 50%;
   background-color: transparent;
-  cursor: pointer;
+  background-repeat: no-repeat;
   transform: none;
   transition: all 0.3s;
 }
 .topic-card .actions button:hover {
   transform: scale(1.1);
 }
+.topic-card .actions .share {
+  background-image: url(/asset/images/share.svg);
+}
 .topic-card .actions .star {
-  width: 28px;
-  height: 33px;
   background-image: url(/asset/images/star.svg);
-  background-repeat: no-repeat;
 }
 .topic-card .actions .star.active {
   background-image: url(/asset/images/star_active.svg);
