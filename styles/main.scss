@@ -1,4 +1,4 @@
-@import "./reset.css";
+@import "./style.css";
 @import "./variables/color";
 
 body {
@@ -24,7 +24,7 @@ body {
   display: flex;
   padding: 50px 0;
   flex-direction: column;
-  gap: 30px;
+  gap: 35px;
 }
 
 .heading {
@@ -61,7 +61,7 @@ body {
         display: flex;
         padding: 5px 10px;
         font-size: 14px;
-        font-weight: bold;
+        // font-weight: bold;
         background-color: $txt-color;
         border-radius: 20px;
         color: white;
