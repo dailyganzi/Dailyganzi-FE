@@ -1,7 +1,5 @@
-@import "./styles/reset.css";
-div {
-  background-color: aqua;
-}
-div button {
-  background-color: green;
+@import "./reset.css";
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+body {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
 }/*# sourceMappingURL=style.css.map */
