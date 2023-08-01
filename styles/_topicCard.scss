@@ -1,0 +1,122 @@
+@import "./style.scss";
+
+.topic-card {
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  background-color: $field-color;
+  border-radius: 20px;
+
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .related-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .heading {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .summary {
+    ul {
+      padding-left: 20px;
+      list-style-type: disc;
+      color: $gray-txt-color;
+
+      li:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .related {
+    ul {
+      padding: 0 0 10px;
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+
+      li {
+        flex: 0 0 250px;
+      }
+
+      li:not(:last-child) {
+        margin-right: 15px;
+      }
+
+      li > a {
+        display: block;
+        width: 100%;
+
+        background-color: $gray-field-color;
+        border-radius: 15px;
+        padding: 15px;
+
+        .press {
+          margin-bottom: 10px;
+          font-weight: bold;
+          font-size: 14px;
+          color: $gray-txt-color;
+        }
+        .title {
+          margin-bottom: 10px;
+          font-weight: bold;
+          color: $txt-color;
+        }
+        .preview {
+          width: 100%;
+          display: -webkit-box;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .actions {
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+
+    button {
+      padding: 0;
+      border: 0;
+      border-radius: 50%;
+      background-color: transparent;
+      cursor: pointer;
+      transform: none;
+      transition: all 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .star {
+      width: 28px;
+      height: 33px;
+      background-image: url(/asset/images/star.svg);
+      background-repeat: no-repeat;
+
+      &.active {
+        background-image: url(/asset/images/star_active.svg);
+      }
+      &:hover {
+        background-image: url(/asset/images/star_active.svg);
+      }
+    }
+  }
+}
