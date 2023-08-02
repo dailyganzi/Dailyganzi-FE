@@ -11,5 +11,6 @@ items.forEach((item)=>{
     })
 })
 
-const feed = document.getElementById("feed");
-console.log(feed);
+// 연동 확인용
+// const feed = document.getElementById("feed");
+// console.log(feed);
