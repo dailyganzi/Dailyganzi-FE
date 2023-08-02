@@ -25,7 +25,6 @@ footer {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,7 +60,15 @@ footer {
   color: #ffb45c;
 }
 
+.bottom-bar:active span {
+  color: #ffb45c;
+}
+
 #feed.active div {
+  background-image: url("../images/colored-home.png");
+}
+
+#feed:active div {
   background-image: url("../images/colored-home.png");
 }
 
@@ -69,6 +76,14 @@ footer {
   background-image: url("../images/colored-favorite.png");
 }
 
+#mark:active div {
+  background-image: url("../images/colored-favorite.png");
+}
+
 #settings.active div {
+  background-image: url("../images/colored-settings.png");
+}
+
+#settings:active div {
   background-image: url("../images/colored-settings.png");
 }/*# sourceMappingURL=footer.css.map */

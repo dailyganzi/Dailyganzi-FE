@@ -25,7 +25,6 @@ footer{
   border: 0;
   background-color: transparent;
   user-select: none;
-  cursor: pointer;
 
   display: flex;
   flex-direction: column;
@@ -66,11 +65,22 @@ footer{
   }
 }
 
+.bottom-bar:active{
+  span{
+    color: $main-color;
+  }
+}
+
 #feed.active{
   div{
     background-image: url('../images/colored-home.png');
     }
-    
+  }
+
+#feed:active{
+  div{
+      background-image: url('../images/colored-home.png');
+    }
   }
 
 #mark.active{
@@ -79,7 +89,19 @@ footer{
     }
   }
 
+#mark:active{
+  div{
+    background-image: url('../images/colored-favorite.png');
+    }
+  }
+
 #settings.active{
+  div{
+    background-image: url('../images/colored-settings.png');
+    }
+  }
+
+#settings:active{
   div{
     background-image: url('../images/colored-settings.png');
     }

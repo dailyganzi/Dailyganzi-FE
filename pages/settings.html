@@ -49,35 +49,14 @@
       </div> 
     </div>
     </section>
-    <footer>
-      <button class="bottom-bar" id="feed">
-        <div></div>
-        <span>피드</span>
-      </button>
-      <button class="bottom-bar" id="mark">
-        <div></div>
-          <span>즐겨찾기</span>
-      </button>
-      <a href="#" onclick="location.href='settings.html'">
-        <button class="bottom-bar" id="settings">
-         <div></div>
-            <span>설정</span>
-        </button>
-      </a>
-  </footer>
-  <script>
-  const items = document.querySelectorAll(".bottom-bar");
-  items.forEach((item)=>{
-    item.addEventListener('click',()=>{
-      items.forEach((e)=>{
-        // 하나만 선택되도록 기존의 효과 지워주기
-        e.classList.remove('active');
-      })
-        // 선택한 메뉴만 효과 추가해주기
-        item.classList.add('active');
-      })
-  })
-  </script>
+    <footer></footer>
     <script src="../scripts/dark.js"></script>
+    <script>
+          const footer = document.querySelector('footer');
+          fetch('footer.html')
+          .then(res => res.text())
+          .then(data => footer.innerHTML = data);
+    </script>
+    <script src="../scripts/active.js"></script>
 </body>
 </html>
