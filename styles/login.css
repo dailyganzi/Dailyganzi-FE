@@ -1,9 +1,5 @@
 @import "./reset.css";
-body {
-  width: 400px;
-  height: 700px;
-}
-
+@import "./wrapper.css";
 section.top {
   position: relative;
   width: 100%;

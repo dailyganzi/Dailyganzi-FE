@@ -1,10 +1,6 @@
 @import "./reset.css";
 @import "./variables/color";
-
-body {
-  width: 400px;
-  height: 700px;
-}
+@import "./wrapper.css";
 
 section.top {
   position: relative;
