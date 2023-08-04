@@ -70,7 +70,6 @@ section.middle div.login-buttons button {
   height: 40px;
   margin-bottom: 15px;
   font-size: 13px;
-  border: none;
   border-radius: 13px;
 }
 section.middle div.login-buttons button i {
@@ -78,8 +77,10 @@ section.middle div.login-buttons button i {
   left: 15px;
 }
 section.middle div.login-buttons .kakao-login {
-  background-color: rgb(245, 245, 27);
+  background-color: #fee500;
+  border: none;
 }
 section.middle div.login-buttons .google-login {
-  background-color: rgb(241, 241, 241);
+  background-color: #ffffff;
+  border: 1px solid rgb(234, 234, 234);
 }/*# sourceMappingURL=login.css.map */

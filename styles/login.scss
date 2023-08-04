@@ -70,7 +70,7 @@ section.middle {
       height: 40px;
       margin-bottom: 15px;
       font-size: 13px;
-      border: none;
+      // border: none;
       border-radius: 13px;
       i {
         position: absolute;
@@ -78,10 +78,12 @@ section.middle {
       }
     }
     .kakao-login {
-      background-color: rgb(245, 245, 27);
+      background-color: #fee500;
+      border: none;
     }
     .google-login {
-      background-color: rgb(241, 241, 241);
+      background-color: #ffffff;
+      border: 1px solid rgb(234, 234, 234);
     }
   }
 }
