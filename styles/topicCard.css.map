@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss","topicCard.css","topicCard.scss","variables/_color.scss"],"names":[],"mappings":"AAAQ,qBAAA;AAEA,qEAAA;AAER;EACE,+CAAA;ACDF;;ACFA;EACE,aAAA;EACA,sBAAA;EACA,SAAA;EAEA,yBCDY;EDEZ,mBAAA;EACA,uBAAA;ADIF;ACFE;EACE,eAAA;ADIJ","file":"topicCard.css"}

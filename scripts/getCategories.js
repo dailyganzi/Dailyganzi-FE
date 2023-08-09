@@ -1,0 +1,47 @@
+const $categories = document.querySelector("#categories");
+
+const categoryImageMap = {
+  재난: "/asset/images/police_car_light_3d.png",
+  정치: "/asset/images/classical_building_3d.png",
+  경제: "/asset/images/money_bag_3d.png",
+  사회: "/asset/images/busts_in_silhouette_3d.png",
+  IT과학: "/asset/images/dna_3d.png",
+  세계: "/asset/images/globe_with_meridians_3d.png",
+  오피니언: "/asset/images/eyes_3d.png",
+  스포츠: "/asset/images/person_swimming_3d_default.png",
+};
+
+const appendListItem = (target, content) => {
+  // <a href="url">content</a>
+  const a = document.createElement("a");
+  a.href = `/pages/detail.html?q=${content}`;
+  a.textContent = `${content}`;
+  if (content in categoryImageMap) {
+    a.style.backgroundImage = `url(${categoryImageMap[content]})`;
+  }
+
+  // <li><a/></li>
+  const li = document.createElement("li");
+  li.appendChild(a);
+
+  target.appendChild(li);
+};
+
+const getCategories = async () => {
+  try {
+    const file = "/asset/data/categories.json";
+    const response = await axios.get(file);
+    const categories = response.data.categories;
+    console.log(categories);
+
+    // #categories 노드의 자식 노드 전부 제거 후 새로운 자식 노드를 추가
+    $categories.replaceChildren();
+    categories.map((item) => {
+      appendListItem($categories, item);
+    });
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+getCategories();
