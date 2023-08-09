@@ -24,6 +24,7 @@ footer {
   background-color: transparent;
   -webkit-user-select: none;
      -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
   display: flex;
   flex-direction: column;
@@ -45,15 +46,15 @@ footer {
 }
 
 #feed div {
-  background-image: url("../images/home.png");
+  background-image: url("../assets/images/home.png");
 }
 
 #mark div {
-  background-image: url("../images/favorite.png");
+  background-image: url("../assets/images/favorite.png");
 }
 
 #settings div {
-  background-image: url("../images/settings.png");
+  background-image: url("../assets/images/settings.png");
 }
 
 .bottom-bar.active span {
@@ -65,25 +66,25 @@ footer {
 }
 
 #feed.active div {
-  background-image: url("../images/colored-home.png");
+  background-image: url("../assets/images/colored-home.png");
 }
 
 #feed:active div {
-  background-image: url("../images/colored-home.png");
+  background-image: url("../assets/images/colored-home.png");
 }
 
 #mark.active div {
-  background-image: url("../images/colored-favorite.png");
+  background-image: url("../assets/images/colored-favorite.png");
 }
 
 #mark:active div {
-  background-image: url("../images/colored-favorite.png");
+  background-image: url("../assets/images/colored-favorite.png");
 }
 
 #settings.active div {
-  background-image: url("../images/colored-settings.png");
+  background-image: url("../assets/images/colored-settings.png");
 }
 
 #settings:active div {
-  background-image: url("../images/colored-settings.png");
+  background-image: url("../assets/images/colored-settings.png");
 }/*# sourceMappingURL=footer.css.map */
