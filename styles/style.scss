@@ -1,9 +1,24 @@
-@import "./styles/reset.css";
+@import "./reset.css";
+@import "./variables/color";
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
-div {
-  background-color: aqua;
+body {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
 
-  button {
-    background-color: green;
-  }
+* {
+  word-wrap: break-word;
+}
+
+.a11y-hidden {
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  clip-path: circle(0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
 }

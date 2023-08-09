@@ -1,0 +1,86 @@
+@import "./reset.css";
+@import "./wrapper.css";
+section.top {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.top div.previous-button {
+  position: absolute;
+  left: 10px;
+}
+section.top div.previous-button button {
+  background: none;
+  border: none;
+}
+section.top div.previous-button button i {
+  font-size: 20px;
+}
+section.top h3 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+section.middle {
+  height: 570px;
+  padding: 15px;
+}
+section.middle h1 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+section.middle p.middle-description {
+  margin-bottom: 50px;
+  color: #828282;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+section.middle p.middle-description span {
+  color: #ffb45c;
+}
+section.middle div.login-line {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+section.middle div.login-line div {
+  width: 85px;
+  height: 1px;
+  background-color: rgb(168, 168, 168);
+}
+section.middle div.login-line p.login-line-ment {
+  font-size: 13px;
+  color: #828282;
+}
+section.middle div.login-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.middle div.login-buttons button {
+  position: relative;
+  width: 90%;
+  height: 40px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  border-radius: 13px;
+}
+section.middle div.login-buttons button i {
+  position: absolute;
+  left: 15px;
+}
+section.middle div.login-buttons .kakao-login {
+  background-color: #fee500;
+  border: none;
+}
+section.middle div.login-buttons .google-login {
+  background-color: #ffffff;
+  border: 1px solid rgb(234, 234, 234);
+}/*# sourceMappingURL=login.css.map */

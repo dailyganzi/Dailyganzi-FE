@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <script
+      src="https://kit.fontawesome.com/ba7b6d7fea.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/Dailyganzi-FE/styles/login.css" />
+  </head>
+  <body>
+    <section class="wrapper">
+      <!-- <section class="top">
+        <button><i class="fa-solid fa-angle-left"></i></button>
+        <h3>로그인</h3>
+      </section> -->
+      <section class="middle">
+        <h1 class="middle-title">어제 뉴스를 한입에</h1>
+        <p class="middle-description">
+          <span>ㅇㅇㅇㅇ에 로그인</span>하여<br />마음에 드는 토픽을 저장하세요.
+        </p>
+        <div class="login-line">
+          <div></div>
+          <p class="login-line-ment">소셜 계정으로 간편하게 시작</p>
+          <div></div>
+        </div>
+        <div class="login-buttons">
+          <button class="kakao-login">
+            <i class="fa-solid fa-comment"></i>카카오 로그인
+          </button>
+          <button class="google-login">
+            <i class="fa-brands fa-google" style="color: #5c72cc"></i>Google
+            계정으로 로그인
+          </button>
+        </div>
+      </section>
+    </section>
+    <script type="module">
+      // TopSection 컴포넌트 import
+      import TopSection from "../components/TopSection.js";
+
+      // TopSection 컴포넌트 생성
+      const topSectionEl = new TopSection({
+        titleText: "로그인",
+      }).el;
+
+      // Wrapper 맨 앞에 TopSection 삽입
+      document
+        .querySelector(".wrapper")
+        .insertAdjacentElement("afterbegin", topSectionEl);
+    </script>
+  </body>
+</html>
