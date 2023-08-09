@@ -9,54 +9,54 @@
     <script src="https://kit.fontawesome.com/8a46faad27.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section class="wrapper">
-      <div class="title">
-          <h1>설정</h1>
+  <section class="wrapper">
+    <div class="title">
+      <h1>설정</h1>
+    </div>
+    <div class="con-wrap">
+      <h2>사용자</h2>
+        <div class="bar-wrap">
+            <div class="con" id="login-out-bar">
+              <span>로그인/로그아웃</span>
+              <i class="fa-solid fa-angle-right" style="color: #646464;"></i>
+            </div>  
         </div>
-        <div class="con-wrap">
-            <h2>사용자</h2>
-            <div class="bar-wrap">
-              <div class="con" id="login-out-bar">
-                <span>로그인/로그아웃</span>
-                <i class="fa-solid fa-angle-right" style="color: #646464;"></i>
-              </div>  
-            </div>
-        </div>  
-      <div class="con-wrap">
-        <h2>커스텀</h2>
+    </div>  
+    <div class="con-wrap">
+      <h2>커스텀</h2>
         <div class="bar-wrap">
           <div class="con" id="bigger-text-bar">
             <span>글씨 크게 보기</span>
             <label class="toggle" id="larger-text">
-                <input class="toggle-checkbox" type="checkbox" name="button">
-                <div class="toggle-switch"></div>
-              </label>
+              <input class="toggle-checkbox" type="checkbox" name="button">
+              <div class="toggle-switch"></div>
+            </label>
           </div>
-            <div class="con" id="push-alarm-bar">
-                <span>푸시알림 설정</span>
-                <label class="toggle">
-                    <input class="toggle-checkbox" type="checkbox" name="button">
-                    <div class="toggle-switch"></div>
-                </label>
-            </div>
-            <div class="con" id="dark-theme-bar">
-                <span>다크 테마 적용</span>
-                <label class="toggle" id="setting-mode">
-                    <input class="toggle-checkbox" type="checkbox" name="button">
-                    <div class="toggle-switch"></div>
-                </label>
-            </div>
-      </div> 
-    </div>
+          <div class="con" id="push-alarm-bar">
+            <span>푸시알림 설정</span>
+            <label class="toggle">
+              <input class="toggle-checkbox" type="checkbox" name="button">
+                <div class="toggle-switch"></div>
+            </label>
+          </div>
+          <div class="con" id="dark-theme-bar">
+            <span>다크 테마 적용</span>
+            <label class="toggle" id="setting-mode">
+              <input class="toggle-checkbox" type="checkbox" name="button">
+                <div class="toggle-switch"></div>
+            </label>
+          </div>
+        </div> 
+      </div>
     </section>
     <footer></footer>
     <script src="../scripts/dark.js"></script>
-    <script>
-          const footer = document.querySelector('footer');
-          fetch('footer.html')
-          .then(res => res.text())
-          .then(data => footer.innerHTML = data);
-    </script>
-    <script src="../scripts/active.js"></script>
+    <!-- <script>
+      const footer = document.querySelector('footer');
+      fetch('footer.html')
+      .then(res => res.text())
+      .then(data => footer.innerHTML = data);
+    </script> -->
+    <!-- <script src="../scripts/active.js" type="text/javascript"></script> -->
 </body>
 </html>
