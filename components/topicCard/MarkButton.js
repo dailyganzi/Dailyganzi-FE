@@ -1,4 +1,4 @@
-import Component from "../Component";
+import Component from "../Component.js";
 
 export default class MarkButton extends Component {
   constructor() {
@@ -6,7 +6,7 @@ export default class MarkButton extends Component {
   }
 
   render() {
-    this.el.className("mark");
+    this.el.className = "mark";
     this.el.id = "mark";
     this.el.addEventListener("click", this.mark);
 
