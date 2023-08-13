@@ -1,6 +1,6 @@
 import Component from "../Component";
 
-export default class ShareButton extends Component {
+export default class MarkButton extends Component {
   constructor() {
     super({ tagName: "button" });
   }
