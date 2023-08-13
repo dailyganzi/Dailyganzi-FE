@@ -1,8 +1,6 @@
-// import createCard from "./components/topicCards";
+import ShareButton from "../components/topicCard/ShareButton.js";
 
-const $wrapper = document.querySelector(".wrapper");
-console.log($wrapper);
-
+// 더미데이터
 const data = {
   keyword: "제목",
   image: "http://via.placeholder.com/640x480",
@@ -32,4 +30,7 @@ const data = {
   ],
 };
 
-createCard($wrapper, data);
+const $wrapper = document.querySelector(".wrapper");
+
+const shareButton = new ShareButton();
+$wrapper.appendChild(shareButton.el);
