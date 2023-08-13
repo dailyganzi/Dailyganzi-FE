@@ -1,5 +1,4 @@
 import Component from "../Component.js";
-// import "https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js";
 
 export default class ShareButton extends Component {
   constructor() {
