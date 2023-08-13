@@ -1,6 +1,4 @@
-import ShareButton from "../components/topicCard/ShareButton.js";
-import Summaries from "../components/topicCard/Summaries.js";
-import RelatedArticle from "../components/topicCard/RelatedArticle.js";
+import TopicCard from "../components/topicCard/TopicCard.js";
 
 // 더미데이터
 const data = {
@@ -34,10 +32,6 @@ const data = {
 
 const $wrapper = document.querySelector(".wrapper");
 
-const shareButton = new ShareButton();
-const summaries = new Summaries({ data: data.summary });
-const relatedArticle = new RelatedArticle({ data: data.related });
+const topicCard = new TopicCard({ data: data });
 
-// $wrapper.appendChild(shareButton.el);
-// $wrapper.appendChild(summaries.el);
-$wrapper.appendChild(relatedArticle.el);
+$wrapper.appendChild(topicCard.el);
