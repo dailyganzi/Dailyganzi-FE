@@ -1,51 +1,5 @@
 @import "./reset.css";
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
-@import "./reset.css";
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
-body {
-  font-family: "Spoqa Han Sans Neo", "sans-serif";
-}
-
-* {
-  word-wrap: break-word;
-}
-
-.a11y-hidden {
-  overflow: hidden;
-  position: absolute;
-  clip: rect(0, 0, 0, 0);
-  -webkit-clip-path: circle(0);
-          clip-path: circle(0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-}
-
-body {
-  font-family: "Spoqa Han Sans Neo", "sans-serif";
-}
-
-* {
-  word-wrap: break-word;
-}
-
-.a11y-hidden {
-  overflow: hidden;
-  position: absolute;
-  clip: rect(0, 0, 0, 0);
-  -webkit-clip-path: circle(0);
-          clip-path: circle(0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-}
-
+@import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css");
 .topic-card {
   padding: 20px 15px;
   display: flex;
@@ -147,6 +101,110 @@ body {
 }
 .topic-card .actions .star:hover {
   background-image: url(/asset/images/star_active.svg);
+}
+
+footer {
+  width: 390px;
+  height: 59px;
+  background-color: #ffffff;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  transition: background-color 0.25s;
+}
+
+.bottom-bar {
+  width: 130px;
+  height: 100%;
+  border: 0;
+  background-color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.25s;
+  cursor: pointer;
+}
+.bottom-bar span {
+  margin-top: 1px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #828282;
+  transition: color 0.25s;
+}
+.bottom-bar div {
+  width: 24px;
+  height: 24px;
+  transition: background-image 0.25s;
+}
+
+#feed div {
+  background-image: url("../asset/images/home.png");
+}
+
+#mark div {
+  background-image: url("../asset/images/favorite.png");
+}
+
+#settings div {
+  background-image: url("../asset/images/settings.png");
+}
+
+.bottom-bar.active span {
+  color: #ffb45c;
+}
+
+.bottom-bar:active span {
+  color: #ffb45c;
+}
+
+#feed.active div {
+  background-image: url("../asset/images/colored-home.png");
+}
+
+#feed:active div {
+  background-image: url("../asset/images/colored-home.png");
+}
+
+#mark.active div {
+  background-image: url("../asset/images/colored-favorite.png");
+}
+
+#mark:active div {
+  background-image: url("../asset/images/colored-favorite.png");
+}
+
+#settings.active div {
+  background-image: url("../asset/images/colored-settings.png");
+}
+
+#settings:active div {
+  background-image: url("../asset/images/colored-settings.png");
+}
+
+body {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+
+* {
+  word-wrap: break-word;
+}
+
+.a11y-hidden {
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  -webkit-clip-path: circle(0);
+          clip-path: circle(0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
 }
 
 body {

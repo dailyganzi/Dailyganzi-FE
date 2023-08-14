@@ -1,6 +1,213 @@
 @import "./reset.css";
+@import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css");
+.topic-card {
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+.topic-card h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.topic-card .related-img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.topic-card .heading {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.topic-card .summary ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  color: #828282;
+}
+.topic-card .summary ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.topic-card .related ul {
+  padding: 0 0 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.topic-card .related ul li {
+  flex: 0 0 250px;
+}
+.topic-card .related ul li:not(:last-child) {
+  margin-right: 15px;
+}
+.topic-card .related ul li > a {
+  display: block;
+  width: 100%;
+  background-color: #ebebeb;
+  border-radius: 15px;
+  padding: 15px;
+}
+.topic-card .related ul li > a .press {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #828282;
+}
+.topic-card .related ul li > a .title {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #222222;
+}
+.topic-card .related ul li > a .preview {
+  width: 100%;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 14px;
+}
+.topic-card .actions {
+  display: flex;
+  gap: 20px;
+  justify-content: right;
+}
+.topic-card .actions button {
+  width: 28px;
+  height: 33px;
+  padding: 0;
+  cursor: pointer;
+  border: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  transform: none;
+  transition: all 0.3s;
+}
+.topic-card .actions button:hover {
+  transform: scale(1.1);
+}
+.topic-card .actions .share {
+  background-image: url(/asset/images/share.svg);
+}
+.topic-card .actions .star {
+  background-image: url(/asset/images/star.svg);
+}
+.topic-card .actions .star.active {
+  background-image: url(/asset/images/star_active.svg);
+}
+.topic-card .actions .star:hover {
+  background-image: url(/asset/images/star_active.svg);
+}
+
+footer {
+  width: 390px;
+  height: 59px;
+  background-color: #ffffff;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  transition: background-color 0.25s;
+}
+
+.bottom-bar {
+  width: 130px;
+  height: 100%;
+  border: 0;
+  background-color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.25s;
+  cursor: pointer;
+}
+.bottom-bar span {
+  margin-top: 1px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #828282;
+  transition: color 0.25s;
+}
+.bottom-bar div {
+  width: 24px;
+  height: 24px;
+  transition: background-image 0.25s;
+}
+
+#feed div {
+  background-image: url("../asset/images/home.png");
+}
+
+#mark div {
+  background-image: url("../asset/images/favorite.png");
+}
+
+#settings div {
+  background-image: url("../asset/images/settings.png");
+}
+
+.bottom-bar.active span {
+  color: #ffb45c;
+}
+
+.bottom-bar:active span {
+  color: #ffb45c;
+}
+
+#feed.active div {
+  background-image: url("../asset/images/colored-home.png");
+}
+
+#feed:active div {
+  background-image: url("../asset/images/colored-home.png");
+}
+
+#mark.active div {
+  background-image: url("../asset/images/colored-favorite.png");
+}
+
+#mark:active div {
+  background-image: url("../asset/images/colored-favorite.png");
+}
+
+#settings.active div {
+  background-image: url("../asset/images/colored-settings.png");
+}
+
+#settings:active div {
+  background-image: url("../asset/images/colored-settings.png");
+}
+
 body {
-  font-family: "Spoqa Han Sans Neo";
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+
+* {
+  word-wrap: break-word;
+}
+
+.a11y-hidden {
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  -webkit-clip-path: circle(0);
+          clip-path: circle(0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+body {
   background-color: #232323;
   display: flex;
   flex-direction: column;
@@ -8,7 +215,6 @@ body {
   align-items: center;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
