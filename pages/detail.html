@@ -6,9 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>일간지</title>
     <link rel="stylesheet" href="../styles/detail.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script defer type="module" src="/modules/detail.js"></script>
   </head>
   <body>
-    <section class="wrapper"></section>
+    <section class="wrapper">
+      <h1 class="heading">분야</h1>
+      <p class="description">어제의 분야 뉴스를 정리했어요.</p>
+      <section class="today-keywords">
+        <h2>분야 뉴스 오늘의 키워드</h2>
+        <ol class="list-keyword"></ol>
+      </section>
+      <section class="topic-cards">
+        <h2 class="a11y-hidden">키워드별 요약 뉴스</h2>
+        <ol class="list-card"></ol>
+      </section>
+    </section>
   </body>
 </html>
