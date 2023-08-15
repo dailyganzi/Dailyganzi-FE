@@ -52,10 +52,12 @@ section.middle {
     .kakao-login {
       background-color: #fee500;
       border: none;
+      cursor: pointer;
     }
     .google-login {
       background-color: #ffffff;
       border: 1px solid rgb(234, 234, 234);
+      cursor: pointer;
     }
   }
 }
