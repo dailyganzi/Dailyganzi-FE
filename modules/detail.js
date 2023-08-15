@@ -1,8 +1,6 @@
-// import createCard from "./components/topicCards";
+import TopicCard from "../components/topicCard/TopicCard.js";
 
-const $wrapper = document.querySelector(".wrapper");
-console.log($wrapper);
-
+// 더미데이터
 const data = {
   keyword: "제목",
   image: "http://via.placeholder.com/640x480",
@@ -32,4 +30,8 @@ const data = {
   ],
 };
 
-createCard($wrapper, data);
+const $wrapper = document.querySelector(".wrapper");
+
+const topicCard = new TopicCard({ data: data });
+
+$wrapper.appendChild(topicCard.el);

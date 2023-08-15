@@ -1,10 +1,16 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 @import "./reset.css";
 @import "./variables/color";
+<<<<<<< HEAD
 @import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css");
 @import "./topicCard";
 // @import "./backButton";
 @import "./footer";
 
+=======
+@import "./_topicCard.scss";
+// @import "./_backButton.scss";
+>>>>>>> d32838fb794d90cbe770d078774f5f2d453b35fe
 
 body {
   font-family: "Spoqa Han Sans Neo", "sans-serif";
