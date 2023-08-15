@@ -10,7 +10,3 @@ items.forEach((item)=>{
       item.classList.add('active');
     })
 })
-
-// 연동 확인용
-// const feed = document.getElementById("feed");
-// console.log(feed);

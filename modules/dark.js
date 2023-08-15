@@ -13,9 +13,11 @@ function enlargedAction(){
   if (body.classList.contains("enlarged")) {
     body.classList.remove("enlarged");
     largerTextButton.checked = false;
+    localStorage.setItem("largerText", largerTextButton.checked);
     } else {
       body.classList.add("enlarged");
       largerTextButton.checked = true;
+      localStorage.setItem("largerText", largerTextButton.checked);
     }
   }
 
@@ -49,12 +51,15 @@ pushAlarmButton.addEventListener("click", () => {
 
 // 다크 테마 적용
 function modeChangedAction() {
-  if (body.classList.contains('dark-mode')) {
+  if (body.classList.contains("dark-mode")) {
+    // 다크모드가 적용된 상태라면
     body.classList.remove("dark-mode");
     changeModeButton.checked = false;
-    } else {
-      body.classList.add("dark-mode");
-      changeModeButton.checked = true;
+    localStorage.setItem("darkMode", changeModeButton.checked);
+    } else { // 라이트모드라면
+    body.classList.add("dark-mode");
+    changeModeButton.checked = true;
+    localStorage.setItem("darkMode", changeModeButton.checked);
     }
   }
 
