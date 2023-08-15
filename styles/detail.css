@@ -139,6 +139,9 @@ body {
   max-width: 390px;
   min-height: 100vh;
   padding: 50px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   border: 1px solid #828282;
   text-align: center;
   background-color: #ebebeb;
@@ -148,15 +151,28 @@ body {
   font-size: 24px;
 }
 .wrapper .description {
-  margin-top: 5px;
+  margin-top: 10px;
   font-weight: bold;
   color: #828282;
 }
 .wrapper .today-keywords {
-  margin-top: 30px;
   padding: 20px;
   border-radius: 15px;
   background-color: #ffffff;
+}
+.wrapper .today-keywords h2 {
   font-weight: bold;
   text-align: left;
+}
+.wrapper .today-keywords .list-keyword {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.wrapper .today-keywords .list-keyword li {
+  padding: 10px 5px;
+  border-radius: 20px;
+  background-color: #222222;
+  color: white;
 }/*# sourceMappingURL=detail.css.map */
