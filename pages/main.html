@@ -38,5 +38,20 @@
         </article>
       </div>
     </section>
+    <script type="module">
+      // Footer 컴포넌트 import
+      import Footer from "../components/Footer.js";
+
+      // Footer 컴포넌트 생성
+      const FooterEl = new Footer({
+        tagName: "footer",
+      }).el;
+
+      // Wrapper 마지막 자식으로 Footer 삽입
+      document
+        .querySelector(".wrapper")
+        .insertAdjacentElement("beforeend", FooterEl);
+    </script>
+    <script src="../modules/keepState.js" defer></script>
   </body>
 </html>

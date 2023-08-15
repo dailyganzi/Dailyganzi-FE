@@ -1,4 +1,5 @@
 import TopicCard from "../components/topicCard/TopicCard.js";
+import Footer from "../components/Footer.js";
 
 // functions
 const getData = async () => {
@@ -33,8 +34,15 @@ const $cardList = $wrapper.querySelector(".list-card");
 getData();
 
 // const topicCard = new TopicCard({ data: data });
-
 // $wrapper.appendChild(topicCard.el);
+
+// Footer 컴포넌트 생성
+const FooterEl = new Footer({
+  tagName: "footer",
+}).el;
+
+// Wrapper 마지막 자식으로 Footer 삽입
+document.querySelector(".wrapper").insertAdjacentElement("beforeend", FooterEl);
 
 // 더미데이터
 const data = {
