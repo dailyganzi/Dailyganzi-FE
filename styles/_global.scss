@@ -2,7 +2,9 @@
 @import "./reset.css";
 @import "./variables/color";
 @import "./_topicCard.scss";
-// @import "./_backButton.scss";
+@import "./_backButton.scss";
+@import "./_topSection.scss";
+@import "./_wrapper.scss";
 
 body {
   font-family: "Spoqa Han Sans Neo", "sans-serif";
