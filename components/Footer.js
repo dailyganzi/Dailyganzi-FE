@@ -62,7 +62,6 @@ export default class Footer extends Component{
 document.addEventListener('DOMContentLoaded', ()=> {
   // 현재 페이지에 따라 active 상태 적용
   const link = document.location.href;
-  console.log(link);
   const feed = document.getElementById("feed");
   const mark = document.getElementById("mark");
   const settings = document.getElementById("settings");
