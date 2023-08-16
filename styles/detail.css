@@ -14,7 +14,7 @@ body {
   height: 100vh;
   background-color: white;
   position: relative;
-  overflow: hidden;
+  overflow: auto;
 }
 
 footer {
@@ -286,7 +286,7 @@ body {
   background-color: #ffffff;
 }
 .wrapper .today-keywords h2 {
-  font-size: 18px2;
+  font-size: 18px;
   font-weight: bold;
   text-align: left;
 }

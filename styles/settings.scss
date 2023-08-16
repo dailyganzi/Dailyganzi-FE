@@ -145,6 +145,30 @@ $toggle-bg-color: #ccc;
   .wrapper {
     background-color: $dark-bg-color;
     color: $field-color;
+
+    .today-keywords{
+      background-color: #454545;
+    }
+
+    .topic-card{ 
+      background-color: #454545;
+
+      h2{
+        color: whitesmoke;
+      }  
+
+      .related ul li > a {
+        background-color: #666666;
+
+        .press{
+          color: $toggle-bg-color;
+        }
+
+        .title{
+          color: white;
+        }
+      }
+    }
   }
 
   h2 {
@@ -163,18 +187,18 @@ $toggle-bg-color: #ccc;
     background-color: $dark-field-color;
   }
 
-  // footer
   footer {
     background-color: $dark-field-color;
   }
 
   // a태그
   .categories .category-list li a{
-    color: $dark-bg-color;
+    color: whitesmoke;
+    background-color: #494949;
   }
 
-  .today-keywords h2{
-    color: $dark-bg-color;
+  .summary ul li{
+    color: $toggle-bg-color;
   }
 }
 
@@ -197,4 +221,9 @@ $toggle-bg-color: #ccc;
       font-size: 14px;
     }
   }
+
+}
+
+footer{
+  border-top: 1px solid $toggle-bg-color;
 }

@@ -14,7 +14,7 @@ body {
   height: 100vh;
   background-color: white;
   position: relative;
-  overflow: hidden;
+  overflow: auto;
 }
 
 footer {
@@ -384,6 +384,24 @@ body {
   background-color: #2d2d2d;
   color: #ffffff;
 }
+.dark-mode .wrapper .today-keywords {
+  background-color: #454545;
+}
+.dark-mode .wrapper .topic-card {
+  background-color: #454545;
+}
+.dark-mode .wrapper .topic-card h2 {
+  color: whitesmoke;
+}
+.dark-mode .wrapper .topic-card .related ul li > a {
+  background-color: #666666;
+}
+.dark-mode .wrapper .topic-card .related ul li > a .press {
+  color: #ccc;
+}
+.dark-mode .wrapper .topic-card .related ul li > a .title {
+  color: white;
+}
 .dark-mode h2 {
   color: #f2f2f2;
 }
@@ -400,10 +418,11 @@ body {
   background-color: #373737;
 }
 .dark-mode .categories .category-list li a {
-  color: #2d2d2d;
+  color: whitesmoke;
+  background-color: #494949;
 }
-.dark-mode .today-keywords h2 {
-  color: #2d2d2d;
+.dark-mode .summary ul li {
+  color: #ccc;
 }
 
 .enlarged .title h1 {
@@ -417,4 +436,8 @@ body {
 }
 .enlarged footer span {
   font-size: 14px;
+}
+
+footer {
+  border-top: 1px solid #ccc;
 }/*# sourceMappingURL=settings.css.map */
