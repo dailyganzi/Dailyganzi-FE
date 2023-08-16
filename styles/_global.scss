@@ -1,8 +1,11 @@
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css");
 @import "./reset.css";
 @import "./variables/color";
-@import "./_topicCard.scss";
-// @import "./_backButton.scss";
+@import "./wrapper";
+@import "./footer";
+@import "./topicCard";
+@import "./topSection";
+@import "./backButton";
 
 body {
   font-family: "Spoqa Han Sans Neo", "sans-serif";

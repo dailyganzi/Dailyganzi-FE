@@ -1,23 +1,22 @@
-@import "./reset.css";
-@import 'variables/color';
-$dark-bg-color : #2d2d2d;
+@import "./global";
+
+$dark-bg-color: #2d2d2d;
 $dark-field-color: #373737;
 $toggle-bg-color: #ccc;
 
-body{
-  font-family: 'Spoqa Han Sans Neo';
-  background-color: #232323;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  user-select: none;
-}
+// body {
+//   background-color: #232323;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   user-select: none;
+// }
 
-.wrapper{
-  width: 390px;
-  height: 844px;
-  // padding: 0px 15px;
+.wrapper {
+  //   width: 390px;
+  //   height: 844px;
+  padding: 0px 15px;
   background-color: $bg-color;
   display: flex;
   flex-direction: column;
@@ -25,33 +24,33 @@ body{
   transition: background-color 0.25s;
 }
 
-.title{
-  h1{
-      margin-top: 50px;
-      font-size: 24px;
-      font-weight: bold;
-    }
+.title {
+  h1 {
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: bold;
+  }
 }
 
-.con-wrap{
+.con-wrap {
   width: 360px;
   margin-top: 30px;
-    h2{
-      margin-left: 5px;
-      margin-bottom: 15px;
-      font-size: 18px;
-      font-weight: bold;
-      color: $gray-txt-color;
-        // transition: color 0.25s;
-    }
+  h2 {
+    margin-left: 5px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: $gray-txt-color;
+    // transition: color 0.25s;
+  }
 }
 
-.bar-wrap{
+.bar-wrap {
   display: flex;
   flex-direction: column;
 }
 
-.con{
+.con {
   height: 52px;
   display: flex;
   justify-content: space-between;
@@ -71,15 +70,15 @@ body{
   }
 }
 
-.con:active{
+.con:active {
   background-color: #dfdfdf;
 }
 
-.dark-mode .con:active{
+.dark-mode .con:active {
   background-color: #4d4d4d;
 }
 
-#push-alarm-bar::before{
+#push-alarm-bar::before {
   content: "";
   position: absolute;
   left: 15px;
@@ -91,15 +90,15 @@ body{
   box-sizing: border-box;
 }
 
-#login-out-bar{
+#login-out-bar {
   border-radius: 15px;
 }
 
-#bigger-text-bar{
+#bigger-text-bar {
   border-radius: 15px 15px 0 0;
 }
 
-#dark-theme-bar{
+#dark-theme-bar {
   border-bottom: none;
   border-radius: 0 0 15px 15px;
 }
@@ -110,7 +109,7 @@ body{
   display: inline-block;
 }
 
-.toggle-switch { 
+.toggle-switch {
   display: inline-block;
   background: $toggle-bg-color;
   border-radius: 16px;
@@ -121,7 +120,8 @@ body{
   transition: background-color 0.25s;
 }
 
-.toggle-switch::before, .toggle-switch::after {
+.toggle-switch::before,
+.toggle-switch::after {
   content: "";
 }
 
@@ -146,54 +146,54 @@ body{
 }
 
 .toggle-checkbox {
-    display: none;
+  display: none;
 }
 
 // dark mode
-.dark-mode{
-  .wrapper{ 
+.dark-mode {
+  .wrapper {
     background-color: $dark-bg-color;
     color: $field-color;
   }
 
-  h2{
+  h2 {
     color: $bg-color;
   }
 
-  .con{
+  .con {
     background-color: $dark-field-color;
 
-    span{
-    color: $bg-color;
+    span {
+      color: $bg-color;
     }
   }
 
-  .toggle-switch::before{
+  .toggle-switch::before {
     background-color: $dark-field-color;
   }
 
   // footer
-  footer{
+  footer {
     background-color: $dark-field-color;
   }
 }
 
 // enlarged
-.enlarged{
-  .title h1{
+.enlarged {
+  .title h1 {
     font-size: 27px;
   }
 
-  .con-wrap h2{
+  .con-wrap h2 {
     font-size: 21px;
   }
 
-  span{
+  span {
     font-size: 18px;
   }
 
-  footer{
-    span{
+  footer {
+    span {
       font-size: 14px;
     }
   }

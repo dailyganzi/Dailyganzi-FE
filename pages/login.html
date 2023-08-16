@@ -8,7 +8,8 @@
       src="https://kit.fontawesome.com/ba7b6d7fea.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/Dailyganzi-FE/styles/login.css" />
+    <!-- <link rel="stylesheet" href="../styles/topSection.css" /> -->
+    <link rel="stylesheet" href="../styles/login.css" />
   </head>
   <body>
     <section class="wrapper">
@@ -19,7 +20,7 @@
       <section class="middle">
         <h1 class="middle-title">어제 뉴스를 한입에</h1>
         <p class="middle-description">
-          <span>ㅇㅇㅇㅇ에 로그인</span>하여<br />마음에 드는 토픽을 저장하세요.
+          <span>카카오톡에 로그인</span>하여<br />마음에 드는 토픽을 저장하세요.
         </p>
         <div class="login-line">
           <div></div>
@@ -30,13 +31,15 @@
           <button class="kakao-login">
             <i class="fa-solid fa-comment"></i>카카오 로그인
           </button>
-          <button class="google-login">
+          <!-- <button class="google-login">
             <i class="fa-brands fa-google" style="color: #5c72cc"></i>Google
             계정으로 로그인
-          </button>
+          </button> -->
         </div>
       </section>
     </section>
+    <script src="../modules/dark.js" defer></script>
+    <!-- TopSection 컴포넌트 -->
     <script type="module">
       // TopSection 컴포넌트 import
       import TopSection from "../components/TopSection.js";
@@ -51,5 +54,6 @@
         .querySelector(".wrapper")
         .insertAdjacentElement("afterbegin", topSectionEl);
     </script>
+    <script src="../modules/keepState.js" defer></script>
   </body>
 </html>

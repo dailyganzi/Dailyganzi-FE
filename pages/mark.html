@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>일간지 설정창</title>
+    <link rel="stylesheet" href="../styles/settings.css" />
+    <!-- <link rel="stylesheet" href="../styles/footer.css" /> -->
+    <script
+      src="https://kit.fontawesome.com/8a46faad27.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="wrapper">
+      <div class="title">
+        <h1>즐겨찾기</h1>
+      </div>
+      <div class="con-wrap">
+        <h2>사용자</h2>
+          <a href="login.html">
+            <div class="bar-wrap">
+              <div class="con" id="login-out-bar">
+                <span>로그인/로그아웃</span>
+                <i class="fa-solid fa-angle-right" style="color: #646464"></i>
+              </div>
+            </div>
+          </a>
+      </div>
+      
+    </section>
+    <script src="../modules/dark.js"></script>
+    <script type="module">
+      // Footer 컴포넌트 import
+      import Footer from "../components/Footer.js";
+
+      // Footer 컴포넌트 생성
+      const FooterEl = new Footer({
+        tagName: "footer",
+      }).el;
+
+      // Wrapper 마지막 자식으로 Footer 삽입
+      document
+        .querySelector(".wrapper")
+        .insertAdjacentElement("beforeend", FooterEl);
+    </script>
+    <script src="../modules/keepState.js" defer></script>
+  </body>
+</html>
