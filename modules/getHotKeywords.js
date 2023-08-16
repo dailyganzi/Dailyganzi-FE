@@ -15,9 +15,10 @@ const appendListItem = (target, number, content) => {
 
 const getHotKeywords = async () => {
   try {
-    const file = "/asset/data/top-liked.json";
+    const file = "/asset/data/hotTopic.json";
     const response = await axios.get(file);
-    const keywords = response.data.keywords;
+    const keywords = response.data.hot_topic;
+    console.log(keywords);
 
     // #keywords 노드의 자식 노드 전부 제거 후 새로운 자식 노드를 추가
     $keywordsList.replaceChildren();
