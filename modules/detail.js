@@ -6,35 +6,47 @@ const getData = async () => {
   try {
     const file = "/asset/data/newsPage.json";
     const response = await axios.get(file);
-    const { today_keys, details } = response.data;
+    const { category, today_topic, details } = response.data;
 
-    drawKeywords(today_keys);
-    drawCards(details[0]);
+    setCategoryName(category);
+    drawKeywords(today_topic);
+    drawCards(details);
   } catch (error) {
     console.error(error);
     alert("데이터 불러오기에 실패했습니다.");
   }
 };
 
+const setCategoryName = (category) => {
+  const $categoryTexts = $wrapper.querySelectorAll(".category");
+  $categoryTexts.forEach((element) => {
+    element.textContent = category;
+  });
+};
+
 const drawKeywords = (data) => {
   // 키워드리스트 삽입
+  const $keywordList = $wrapper.querySelector(".list-keyword");
+  // $keywordList.replaceChildren();
   console.log(data);
 };
 
 const drawCards = (data) => {
   // 카드리스트 삽입
-  console.log(data);
+  const $cardList = $wrapper.querySelector(".list-card");
+
+  data.map((item) => {
+    const li = document.createElement("li");
+    const topicCard = new TopicCard({ data: item });
+    li.appendChild(topicCard.el);
+    $cardList.appendChild(li);
+  });
 };
 
 // main 실행코드
 const $wrapper = document.querySelector(".wrapper");
-const $keywordList = $wrapper.querySelector(".list-keyword");
-const $cardList = $wrapper.querySelector(".list-card");
 
 getData();
-
-// const topicCard = new TopicCard({ data: data });
-// $wrapper.appendChild(topicCard.el);
 
 // Footer 컴포넌트 생성
 const FooterEl = new Footer({
