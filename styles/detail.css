@@ -260,11 +260,12 @@ body {
 }
 
 .wrapper {
-  padding: 50px 15px;
+  padding: 50px 15px 30px;
   display: flex;
   flex-direction: column;
   gap: 30px;
   border: 1px solid #828282;
+  overflow: scroll;
   background-color: #ebebeb;
 }
 .wrapper header {
@@ -302,4 +303,9 @@ body {
   background-color: #222222;
   border-radius: 20px;
   color: white;
+}
+.wrapper .list-card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }/*# sourceMappingURL=detail.css.map */

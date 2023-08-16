@@ -6,11 +6,12 @@ body {
 }
 
 .wrapper {
-  padding: 50px 15px;
+  padding: 50px 15px 30px;
   display: flex;
   flex-direction: column;
   gap: 30px;
   border: 1px solid $gray-txt-color;
+  overflow: scroll;
   // text-align: center;
 
   background-color: $gray-field-color;
@@ -55,5 +56,11 @@ body {
         color: white;
       }
     }
+  }
+
+  .list-card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 }
