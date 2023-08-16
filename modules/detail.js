@@ -1,21 +1,6 @@
 import TopicCard from "../components/topicCard/TopicCard.js";
 
 // functions
-const getData = async () => {
-  try {
-    const file = "/asset/data/newsPage.json";
-    const response = await axios.get(file);
-    const { category, today_topic, details } = response.data;
-
-    setCategoryName(category);
-    drawKeywords(today_topic);
-    drawCards(details);
-  } catch (error) {
-    console.error(error);
-    alert("데이터 불러오기에 실패했습니다.");
-  }
-};
-
 const setCategoryName = (category) => {
   const $categoryTexts = $wrapper.querySelectorAll(".category");
   $categoryTexts.forEach((element) => {
@@ -45,6 +30,21 @@ const drawCards = (data) => {
     li.appendChild(topicCard.el);
     $cardList.appendChild(li);
   });
+};
+
+const getData = async () => {
+  try {
+    const file = "/asset/data/newsPage.json";
+    const response = await axios.get(file);
+    const { category, today_topic, details } = response.data;
+
+    setCategoryName(category);
+    drawKeywords(today_topic);
+    drawCards(details);
+  } catch (error) {
+    console.error(error);
+    alert("데이터 불러오기에 실패했습니다.");
+  }
 };
 
 // main 실행코드
