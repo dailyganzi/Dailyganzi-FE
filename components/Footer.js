@@ -24,7 +24,7 @@ export default class Footer extends Component{
 
     // 즐겨찾기
       this.markA = document.createElement("a");
-      this.markA.setAttribute("href", "mark.html");
+      this.markA.setAttribute("href", "");
 
       this.mark = document.createElement("button");
       this.mark.className = "bottom-bar";
@@ -37,6 +37,11 @@ export default class Footer extends Component{
       const markSpan = document.createElement("span");
       markSpan.innerText = "즐겨찾기";
       this.mark.appendChild(markSpan);
+
+    // 즐겨찾기 클릭시 alert 창 띄우기
+      this.markA.addEventListener('click', ()=>{
+        alert("준비중인 기능입니다.");
+      });
 
     // 설정
       this.settingsA = document.createElement("a");
@@ -75,5 +80,3 @@ document.addEventListener('DOMContentLoaded', ()=> {
     mark.classList.add("active");
   }
 });
-
-

@@ -26,8 +26,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  border-top: 1px solid #D9D9D9;
-  /* transition: background-color 0.25s; */
+  transition: background-color 0.25s;
 }
 
 .bottom-bar {
@@ -37,13 +36,12 @@ footer {
   background-color: transparent;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* transition: background-color 0.25s; */
+  transition: background-color 0.25s;
   cursor: pointer;
 }
 .bottom-bar span {
@@ -51,12 +49,12 @@ footer {
   font-size: 12px;
   font-weight: 400;
   color: #828282;
-  /* transition: color 0.25s; */
+  transition: color 0.25s;
 }
 .bottom-bar div {
   width: 24px;
   height: 24px;
-  /* transition: background-image 0.25s; */
+  transition: background-image 0.25s;
 }
 
 #feed div {
@@ -256,12 +254,10 @@ body {
 }
 
 .wrapper {
-  padding: 0px 15px;
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* transition: background-color 0.25s; */
 }
 
 .title h1 {
@@ -296,13 +292,13 @@ body {
   z-index: 1;
   padding: 0 15px;
   background-color: #ffffff;
-  /* transition: background-color 0.25s; */
+  transition: background-color 0.25s;
   cursor: pointer;
 }
 .con span {
   font-weight: 500;
   color: #000000;
-  /* transition: color 0.25s; */
+  transition: color 0.25s;
 }
 
 .con:active {
@@ -312,8 +308,6 @@ body {
 .dark-mode .con:active {
   background-color: #4d4d4d;
 }
-
-
 
 #push-alarm-bar::before {
   content: "";
@@ -353,7 +347,7 @@ body {
   height: 32px;
   position: relative;
   vertical-align: middle;
-  /* transition: background-color 0.25s; */
+  transition: background-color 0.25s;
 }
 
 .toggle-switch::before,
@@ -370,8 +364,7 @@ body {
   position: absolute;
   top: 4px;
   left: 4px;
-  transition: left 0.25s;
-  /* transition: background-color 0.25s; */
+  transition: left 0.25s, background-color 0.25s;
 }
 
 .toggle-checkbox:checked + .toggle-switch {
@@ -405,9 +398,11 @@ body {
 .dark-mode footer {
   background-color: #373737;
 }
-
-.dark-mode .categories .category-list li a{
-  color: #373737;
+.dark-mode .categories .category-list li a {
+  color: #2d2d2d;
+}
+.dark-mode .today-keywords h2 {
+  color: #2d2d2d;
 }
 
 .enlarged .title h1 {
@@ -422,18 +417,3 @@ body {
 .enlarged footer span {
   font-size: 14px;
 }/*# sourceMappingURL=settings.css.map */
-
-/* enlarged -> main.html 적용 */
-.enlarged .categories .heading{
-  font-size: 22px;
-}
-
-.enlarged .hot-keywords .heading{
-  font-size: 21px;
-}
-
-.enlarged .hot-keywords .keywords li a{
-  font-size: 16px;
-}
-
-/* enlarged -> detail.html 적용 */
