@@ -27,8 +27,13 @@ const setCategoryName = (category) => {
 const drawKeywords = (data) => {
   // 키워드리스트 삽입
   const $keywordList = $wrapper.querySelector(".list-keyword");
-  // $keywordList.replaceChildren();
-  console.log(data);
+  $keywordList.replaceChildren();
+
+  data.map((item) => {
+    const li = document.createElement("li");
+    li.textContent = `${item}`;
+    $keywordList.appendChild(li);
+  });
 };
 
 const drawCards = (data) => {
