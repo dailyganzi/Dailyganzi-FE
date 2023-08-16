@@ -1,29 +1,5 @@
 import Component from "../Component.js";
 
-const dummy = [
-  {
-    press: "언론사",
-    title: "기사 제목",
-    preview:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae cum repudiandae odit soluta voluptatibus optio, illum harum voluptates. Recusandae doloribus atque doloremque aperiam laborum tenetur, molestiae ipsa corrupti aliquam.",
-    url: "#1",
-  },
-  {
-    press: "언론사",
-    title: "기사 제목",
-    preview:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae cum repudiandae odit soluta voluptatibus optio, illum harum voluptates. Recusandae doloribus atque doloremque aperiam laborum tenetur, molestiae ipsa corrupti aliquam.",
-    url: "#2",
-  },
-  {
-    press: "언론사",
-    title: "기사 제목",
-    preview:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae cum repudiandae odit soluta voluptatibus optio, illum harum voluptates. Recusandae doloribus atque doloremque aperiam laborum tenetur, molestiae ipsa corrupti aliquam.",
-    url: "#3",
-  },
-];
-
 export default class ShareButton extends Component {
   constructor({ data = dummy }) {
     super({ tagName: "div", props: { data } });
@@ -38,6 +14,7 @@ export default class ShareButton extends Component {
     heading.textContent = "관련 기사 보기";
 
     const ul = document.createElement("ul");
+    console.log(this.props.data);
     this.props.data.map((item, index) => {
       const li = document.createElement("li");
       li.classList.add(`item${index}`);
@@ -65,3 +42,27 @@ export default class ShareButton extends Component {
     this.el.append(heading, ul);
   }
 }
+
+const dummy = [
+  {
+    press: "언론사",
+    title: "기사 제목",
+    preview:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae cum repudiandae odit soluta voluptatibus optio, illum harum voluptates. Recusandae doloribus atque doloremque aperiam laborum tenetur, molestiae ipsa corrupti aliquam.",
+    url: "#1",
+  },
+  {
+    press: "언론사",
+    title: "기사 제목",
+    preview:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae cum repudiandae odit soluta voluptatibus optio, illum harum voluptates. Recusandae doloribus atque doloremque aperiam laborum tenetur, molestiae ipsa corrupti aliquam.",
+    url: "#2",
+  },
+  {
+    press: "언론사",
+    title: "기사 제목",
+    preview:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae cum repudiandae odit soluta voluptatibus optio, illum harum voluptates. Recusandae doloribus atque doloremque aperiam laborum tenetur, molestiae ipsa corrupti aliquam.",
+    url: "#3",
+  },
+];

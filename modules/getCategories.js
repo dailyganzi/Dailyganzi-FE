@@ -9,22 +9,23 @@ const categoryImageMap = {
   세계: "/asset/images/globe_with_meridians_3d.png",
   오피니언: "/asset/images/eyes_3d.png",
   스포츠: "/asset/images/person_swimming_3d_default.png",
+  생활문화: "/asset/images/shopping_cart_3d.png",
 };
 
-const appendListItem = (target, content) => {
-  // <a href="url">content</a>
+const appendListItem = (text, id) => {
+  // <a href="url">text</a>
   const a = document.createElement("a");
-  a.href = `/pages/detail.html?q=${content}`;
-  a.textContent = `${content}`;
-  if (content in categoryImageMap) {
-    a.style.backgroundImage = `url(${categoryImageMap[content]})`;
+  a.href = `/pages/detail.html?q=${id}`;
+  a.textContent = `${text}`;
+  if (text in categoryImageMap) {
+    a.style.backgroundImage = `url(${categoryImageMap[text]})`;
   }
 
   // <li><a/></li>
   const li = document.createElement("li");
   li.appendChild(a);
 
-  target.appendChild(li);
+  $categories.appendChild(li);
 };
 
 const getCategories = async () => {
@@ -36,9 +37,10 @@ const getCategories = async () => {
 
     // #categories 노드의 자식 노드 전부 제거 후 새로운 자식 노드를 추가
     $categories.replaceChildren();
-    categories.map((item) => {
-      appendListItem($categories, item);
-    });
+    for (let key in categories) {
+      console.log();
+      appendListItem(key, categories[key]);
+    }
   } catch (error) {
     console.error(error);
   }

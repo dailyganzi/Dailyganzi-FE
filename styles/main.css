@@ -131,6 +131,7 @@ footer {
 }
 .topic-card .summary ul li:not(:last-child) {
   margin-bottom: 10px;
+  line-height: normal;
 }
 .topic-card .related ul {
   padding: 0 0 10px;
@@ -254,13 +255,13 @@ body {
 }
 
 .wrapper {
-  padding: 0 15px;
+  padding: 50px 15px;
   background-color: #ffffff;
 }
 
 .contents {
+  width: 100%;
   display: flex;
-  padding: 50px 0;
   flex-direction: column;
   gap: 35px;
   height: 100vh;
@@ -302,6 +303,9 @@ body {
   color: white;
 }
 
+.categories {
+  margin-bottom: 70px;
+}
 .categories .heading {
   font-size: 20px;
 }

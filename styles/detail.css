@@ -131,6 +131,7 @@ footer {
 }
 .topic-card .summary ul li:not(:last-child) {
   margin-bottom: 10px;
+  line-height: normal;
 }
 .topic-card .related ul {
   padding: 0 0 10px;
@@ -259,24 +260,52 @@ body {
 }
 
 .wrapper {
-  padding: 50px 15px;
-  text-align: center;
+  padding: 50px 15px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: 1px solid #828282;
+  overflow: scroll;
   background-color: #ebebeb;
 }
-.wrapper .heading {
+.wrapper header {
+  text-align: center;
+}
+.wrapper header h1 {
   font-weight: bold;
   font-size: 24px;
 }
-.wrapper .description {
-  margin-top: 5px;
+.wrapper header .description {
+  margin-top: 10px;
   font-weight: bold;
   color: #828282;
 }
 .wrapper .today-keywords {
-  margin-top: 30px;
   padding: 20px;
   border-radius: 15px;
   background-color: #ffffff;
+}
+.wrapper .today-keywords h2 {
+  font-size: 18px2;
   font-weight: bold;
   text-align: left;
+}
+.wrapper .today-keywords .list-keyword {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.wrapper .today-keywords .list-keyword li {
+  display: flex;
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #222222;
+  border-radius: 20px;
+  color: white;
+}
+.wrapper .list-card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }/*# sourceMappingURL=detail.css.map */
