@@ -1,35 +1,31 @@
 @import "./_global.scss";
 
 body {
-  // width: 100vw;
-  // min-width: 350px;
-  // min-height: 100vh;
   display: flex;
   justify-content: center;
-  // background-color: $bg-color;
 }
 
 .wrapper {
-  // width: 100%;
-  // max-width: 390px;
-  // min-height: 100vh;
   padding: 50px 15px;
   display: flex;
   flex-direction: column;
   gap: 30px;
   border: 1px solid $gray-txt-color;
-  text-align: center;
+  // text-align: center;
 
   background-color: $gray-field-color;
 
-  .heading {
-    font-weight: bold;
-    font-size: 24px;
-  }
-  .description {
-    margin-top: 10px;
-    font-weight: bold;
-    color: $gray-txt-color;
+  header {
+    text-align: center;
+    h1 {
+      font-weight: bold;
+      font-size: 24px;
+    }
+    .description {
+      margin-top: 10px;
+      font-weight: bold;
+      color: $gray-txt-color;
+    }
   }
 
   .today-keywords {

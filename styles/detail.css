@@ -265,14 +265,16 @@ body {
   flex-direction: column;
   gap: 30px;
   border: 1px solid #828282;
-  text-align: center;
   background-color: #ebebeb;
 }
-.wrapper .heading {
+.wrapper header {
+  text-align: center;
+}
+.wrapper header h1 {
   font-weight: bold;
   font-size: 24px;
 }
-.wrapper .description {
+.wrapper header .description {
   margin-top: 10px;
   font-weight: bold;
   color: #828282;

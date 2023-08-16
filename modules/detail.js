@@ -1,5 +1,4 @@
 import TopicCard from "../components/topicCard/TopicCard.js";
-import Footer from "../components/Footer.js";
 
 // functions
 const getData = async () => {
@@ -52,41 +51,3 @@ const drawCards = (data) => {
 const $wrapper = document.querySelector(".wrapper");
 
 getData();
-
-// Footer 컴포넌트 생성
-const FooterEl = new Footer({
-  tagName: "footer",
-}).el;
-
-// Wrapper 마지막 자식으로 Footer 삽입
-document.querySelector(".wrapper").insertAdjacentElement("beforeend", FooterEl);
-
-// 더미데이터
-const data = {
-  keyword: "제목",
-  image: "http://via.placeholder.com/640x480",
-  summary: ["요약1", "요약2", "요약3"],
-  related: [
-    {
-      press: "언론사",
-      title: "기사 제목",
-      preview:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae cum repudiandae odit soluta voluptatibus optio, illum harum voluptates. Recusandae doloribus atque doloremque aperiam laborum tenetur, molestiae ipsa corrupti aliquam.",
-      url: "naver.com",
-    },
-    {
-      press: "언론사",
-      title: "기사 제목",
-      preview:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae cum repudiandae odit soluta voluptatibus optio, illum harum voluptates. Recusandae doloribus atque doloremque aperiam laborum tenetur, molestiae ipsa corrupti aliquam.",
-      url: "naver.com",
-    },
-    {
-      press: "언론사",
-      title: "기사 제목",
-      preview:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae cum repudiandae odit soluta voluptatibus optio, illum harum voluptates. Recusandae doloribus atque doloremque aperiam laborum tenetur, molestiae ipsa corrupti aliquam.",
-      url: "naver.com",
-    },
-  ],
-};
