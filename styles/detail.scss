@@ -1,35 +1,32 @@
 @import "./_global.scss";
 
 body {
-  // width: 100vw;
-  // min-width: 350px;
-  // min-height: 100vh;
   display: flex;
   justify-content: center;
-  // background-color: $bg-color;
 }
 
 .wrapper {
-  // width: 100%;
-  // max-width: 390px;
-  // min-height: 100vh;
-  padding: 50px 15px;
+  padding: 50px 15px 30px;
   display: flex;
   flex-direction: column;
   gap: 30px;
   border: 1px solid $gray-txt-color;
-  text-align: center;
+  overflow: scroll;
+  // text-align: center;
 
   background-color: $gray-field-color;
 
-  .heading {
-    font-weight: bold;
-    font-size: 24px;
-  }
-  .description {
-    margin-top: 10px;
-    font-weight: bold;
-    color: $gray-txt-color;
+  header {
+    text-align: center;
+    h1 {
+      font-weight: bold;
+      font-size: 24px;
+    }
+    .description {
+      margin-top: 10px;
+      font-weight: bold;
+      color: $gray-txt-color;
+    }
   }
 
   .today-keywords {
@@ -38,6 +35,7 @@ body {
     background-color: $field-color;
 
     h2 {
+      font-size: 18px2;
       font-weight: bold;
       text-align: left;
     }
@@ -49,11 +47,20 @@ body {
       gap: 5px;
 
       li {
-        padding: 10px 5px;
-        border-radius: 20px;
+        display: flex;
+        padding: 5px 10px;
+        font-size: 14px;
+        // font-weight: bold;
         background-color: $txt-color;
+        border-radius: 20px;
         color: white;
       }
     }
+  }
+
+  .list-card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 }

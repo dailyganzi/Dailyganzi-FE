@@ -8,23 +8,29 @@
     <link rel="stylesheet" href="../styles/detail.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script defer type="module" src="/modules/detail.js"></script>
+    <script defer src="../modules/dark.js"></script>
+    <script defer src="../modules/keepState.js"></script>
   </head>
   <body>
     <section class="wrapper">
       <header>
-        <h1 class="heading">분야</h1>
-        <p class="description">어제의 분야 뉴스를 정리했어요.</p>
+        <h1><span class="category">분야</span></h1>
+        <p class="description">
+          어제의 <span class="category">분야</span> 뉴스를 정리했어요.
+        </p>
       </header>
       <section class="today-keywords">
-        <h2>분야 뉴스 오늘의 키워드</h2>
-        <ol class="list-keyword"></ol>
+        <h2><span class="category">분야</span> 뉴스 오늘의 키워드</h2>
+        <ol class="list-keyword">
+          <li>ㅇㅇ</li>
+          <li>ㅇㅇ</li>
+          <li>ㅇㅇ</li>
+        </ol>
       </section>
       <section class="topic-cards">
         <h2 class="a11y-hidden">키워드별 요약 뉴스</h2>
         <ol class="list-card"></ol>
       </section>
     </section>
-    <script src="../modules/dark.js" defer></script>
-    <script src="../modules/keepState.js" defer></script>
   </body>
 </html>
