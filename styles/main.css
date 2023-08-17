@@ -256,9 +256,9 @@ body {
   white-space: nowrap;
 }
 
-.wrapper {
+section.wrapper {
   padding: 0px 15px 50px;
-  background-color: #ffffff;
+  background-color: white;
 }
 
 .contents {

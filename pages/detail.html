@@ -37,5 +37,19 @@
         <ol class="list-card"></ol>
       </section>
     </section>
+    <script type="module">
+      // TopSection 컴포넌트 import
+      import TopSection from "../components/TopSection.js";
+
+      // TopSection 컴포넌트 생성
+      const topSectionEl = new TopSection({
+        titleText: "",
+      }).el;
+
+      // Wrapper 맨 앞에 TopSection 삽입
+      document
+        .querySelector(".wrapper")
+        .insertAdjacentElement("afterbegin", topSectionEl);
+    </script>
   </body>
 </html>
