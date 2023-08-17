@@ -15,8 +15,9 @@ const appendListItem = (target, number, content) => {
 
 const getHotKeywords = async () => {
   try {
-    const file = "/asset/data/hotTopic.json";
-    const response = await axios.get(file);
+    // const file = "/asset/data/hotTopic.json";
+    axios.defaults.baseURL = "https://dailyganzi-back-app.fly.dev/api/";
+    const response = await axios.get("/hot-topic");
     const keywords = response.data.hot_topic;
     console.log(keywords);
 

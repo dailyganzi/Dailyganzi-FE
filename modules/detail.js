@@ -32,10 +32,19 @@ const drawCards = (data) => {
   });
 };
 
-const getData = async () => {
+const getCategoryIdFromParams = () => {
+  const params = new URLSearchParams(window.location.search);
+  const categoryId = params.get("category_id");
+  console.log(categoryId);
+
+  return categoryId;
+};
+
+const getData = async (categoryId) => {
   try {
-    const file = "/asset/data/newsPage.json";
-    const response = await axios.get(file);
+    // const file = "/asset/data/newsPage.json";
+    axios.defaults.baseURL = "https://dailyganzi-back-app.fly.dev/api/";
+    const response = await axios.get(`${categoryId}/newsPage`);
     const { category, today_topic, details } = response.data;
 
     setCategoryName(category);
@@ -50,4 +59,5 @@ const getData = async () => {
 // main 실행코드
 const $wrapper = document.querySelector(".wrapper");
 
-getData();
+const categoryId = getCategoryIdFromParams();
+getData(categoryId);

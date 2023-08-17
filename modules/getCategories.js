@@ -15,7 +15,7 @@ const categoryImageMap = {
 const appendListItem = (text, id) => {
   // <a href="url">text</a>
   const a = document.createElement("a");
-  a.href = `../pages/detail.html?q=${id}`;
+  a.href = `../pages/detail.html?category_id=${id}`;
   a.textContent = `${text}`;
   if (text in categoryImageMap) {
     a.style.backgroundImage = `url(${categoryImageMap[text]})`;
@@ -32,8 +32,6 @@ const getCategories = async () => {
   try {
     axios.defaults.baseURL = "https://dailyganzi-back-app.fly.dev/api/";
     const response = await axios.get("/categories");
-
-    console.log(response);
     const categories = response.data.categories;
     console.log(categories);
 
