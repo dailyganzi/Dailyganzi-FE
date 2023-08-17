@@ -10,9 +10,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  border: 1px solid $gray-txt-color;
-  overflow: scroll;
+  overflow: auto;
   // text-align: center;
+  // border: 1px solid $gray-txt-color;
 
   background-color: $gray-field-color;
 
@@ -30,6 +30,7 @@ body {
   }
 
   .today-keywords {
+    width: 100%;
     padding: 20px;
     border-radius: 15px;
     background-color: $field-color;

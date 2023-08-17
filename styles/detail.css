@@ -266,8 +266,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  border: 1px solid #828282;
-  overflow: scroll;
+  overflow: auto;
   background-color: #ebebeb;
 }
 .wrapper header {
@@ -283,6 +282,7 @@ body {
   color: #828282;
 }
 .wrapper .today-keywords {
+  width: 100%;
   padding: 20px;
   border-radius: 15px;
   background-color: #ffffff;
