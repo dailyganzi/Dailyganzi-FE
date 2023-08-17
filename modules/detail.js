@@ -1,4 +1,5 @@
 import TopicCard from "../components/topicCard/TopicCard.js";
+import TopSection from "../components/TopSection.js";
 
 // functions
 const setCategoryName = (category) => {
@@ -58,6 +59,14 @@ const getData = async (categoryId) => {
 
 // main 실행코드
 const $wrapper = document.querySelector(".wrapper");
+
+// TopSection 컴포넌트 생성
+const topSectionEl = new TopSection({
+  titleText: "",
+}).el;
+
+// Wrapper 맨 앞에 TopSection 삽입
+$wrapper.insertAdjacentElement("afterbegin", topSectionEl);
 
 const categoryId = getCategoryIdFromParams();
 getData(categoryId);
