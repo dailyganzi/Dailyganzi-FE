@@ -67,15 +67,16 @@ export default class Footer extends Component{
 document.addEventListener('DOMContentLoaded', ()=> {
   // 현재 페이지에 따라 active 상태 적용
   let pathname = window.location.pathname;
+  console.log(pathname);
   const feed = document.getElementById("feed");
   const mark = document.getElementById("mark");
   const settings = document.getElementById("settings");
 
-  if(pathname == "../pages/settings.html"){
+  if(pathname == "/pages/settings.html"){
     settings.classList.add("active");
-  } else if(pathname == "../pages/main.html"){
+  } else if(pathname == "/pages/main.html"){
     feed.classList.add("active");
-  } else if (pathname == "../pages/mark.html"){
+  } else if (pathname == "/pages/mark.html"){
     mark.classList.add("active");
   }
 });
