@@ -30,8 +30,11 @@ const appendListItem = (text, id) => {
 
 const getCategories = async () => {
   try {
-    const file = "/asset/data/categories.json";
-    const response = await axios.get(file);
+    // const file = "/asset/data/categories.json";
+    axios.defaults.baseURL = "https://dailyganzi-back-app.fly.dev/api/";
+    const response = await axios.get("/categories");
+    // const response = await axios.get(file);
+    console.log(response);
     const categories = response.data.categories;
     console.log(categories);
 
