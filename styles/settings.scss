@@ -240,7 +240,7 @@ $toggle-bg-color: #ccc;
   }
 
   .categories .heading{
-    font-size: 22px;
+    font-size: 23px;
   }
 
   .categories .category-list li a{
@@ -253,11 +253,19 @@ $toggle-bg-color: #ccc;
       font-size: 27px;
     }
 
-    p .description{
-      font-size: 18px;
+    .description{
+      font-size: 18.5px;
     }
   }
   
+  .today-keywords h2{
+    font-size: 21px;
+  }
+
+  .today-keywords .list-keyword li{
+    font-size: 17px;
+  }
+
   .topic-card h2{
     font-size: 26px;
   }
@@ -267,12 +275,24 @@ $toggle-bg-color: #ccc;
   }
 
   .topic-card .heading{
-    font-size: 22px;
+    font-size: 23px;
   }
 
   .topic-card .summary ul{
     font-size: 17.5px;
   }
+
+  .topic-card .related ul li > a .press{
+    font-size: 17px;
+  }
+
+  .topic-card .related ul li > a .title{
+    font-size: 18px;
+  }
+
+  .topic-card .related ul li > a .preview {
+    font-size: 16px;
+  } 
 
 }
 

@@ -451,7 +451,7 @@ body {
   font-size: 16px;
 }
 .enlarged .categories .heading {
-  font-size: 22px;
+  font-size: 23px;
 }
 .enlarged .categories .category-list li a {
   font-size: 22px;
@@ -459,8 +459,14 @@ body {
 .enlarged header h1 .category {
   font-size: 27px;
 }
-.enlarged header p .description {
-  font-size: 18px;
+.enlarged header .description {
+  font-size: 18.5px;
+}
+.enlarged .today-keywords h2 {
+  font-size: 21px;
+}
+.enlarged .today-keywords .list-keyword li {
+  font-size: 17px;
 }
 .enlarged .topic-card h2 {
   font-size: 26px;
@@ -469,10 +475,19 @@ body {
   font-size: 16px;
 }
 .enlarged .topic-card .heading {
-  font-size: 22px;
+  font-size: 23px;
 }
 .enlarged .topic-card .summary ul {
   font-size: 17.5px;
+}
+.enlarged .topic-card .related ul li > a .press {
+  font-size: 17px;
+}
+.enlarged .topic-card .related ul li > a .title {
+  font-size: 18px;
+}
+.enlarged .topic-card .related ul li > a .preview {
+  font-size: 16px;
 }
 
 footer {
