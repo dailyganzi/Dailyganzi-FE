@@ -72,11 +72,11 @@ document.addEventListener('DOMContentLoaded', ()=> {
   const mark = document.getElementById("mark");
   const settings = document.getElementById("settings");
 
-  if(pathname == "/Dailyganzi-FE/pages/settings.html"){
+  if(pathname == "/pages/settings.html"){
     settings.classList.add("active");
-  } else if(pathname == "/Dailyganzi-FE/pages/main.html"){
+  } else if(pathname == "/pages/main.html"){
     feed.classList.add("active");
-  } else if (pathname == "/Dailyganzi-FE/pages/mark.html"){
+  } else if (pathname == "/pages/mark.html"){
     mark.classList.add("active");
   }
 });
