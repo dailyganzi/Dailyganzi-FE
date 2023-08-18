@@ -13,6 +13,12 @@ export default class ShareButton extends Component {
     heading.classList.add("heading");
     heading.textContent = "관련 기사 보기";
 
+    const a11yAnounce = document.createElement("p");
+    heading.classList.add("a11y-hidden");
+    heading.textContent = "클릭할 경우 해당 뉴스 페이지로 이동합니다.";
+
+    this.el.append(heading, a11yAnounce);
+
     const ul = document.createElement("ul");
     console.log(this.props.data);
     this.props.data.map((item, index) => {
@@ -34,12 +40,23 @@ export default class ShareButton extends Component {
       divPreview.classList.add("preview");
       divPreview.textContent = item.preview;
 
-      a.append(pPress, pTitle, divPreview);
+      // a11y-hidden
+      const spanPress = document.createElement("span");
+      spanPress.classList.add("a11y-hidden");
+      spanPress.textContent = "언론사: ";
+      const spanTitle = document.createElement("span");
+      spanTitle.classList.add("a11y-hidden");
+      spanTitle.textContent = "제목: ";
+      const spanPreview = document.createElement("span");
+      spanPreview.classList.add("a11y-hidden");
+      spanPreview.textContent = "내용: ";
+
+      a.append(spanPress, pPress, spanTitle, pTitle, spanPreview, divPreview);
       li.appendChild(a);
       ul.appendChild(li);
     });
 
-    this.el.append(heading, ul);
+    this.el.appendChild(ul);
   }
 }
 
