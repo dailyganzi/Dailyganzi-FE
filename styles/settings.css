@@ -381,6 +381,9 @@ body {
   display: none;
 }
 
+.dark-mode {
+  background-color: #2d2d2d;
+}
 .dark-mode .wrapper {
   background-color: #2d2d2d;
   color: #ffffff;
@@ -419,7 +422,8 @@ body {
   background-color: #373737;
 }
 .dark-mode footer {
-  background-color: #373737;
+  background-color: #2d2d2d;
+  border-top: 1px solid #797979;
 }
 .dark-mode .categories .category-list li a {
   color: whitesmoke;

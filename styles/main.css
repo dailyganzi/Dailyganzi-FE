@@ -277,7 +277,7 @@ section.wrapper {
 .desc {
   font-size: 16px;
   font-weight: bold;
-  color: #828282;
+  color: #bdbdbd;
 }
 
 .title .heading {
@@ -299,7 +299,7 @@ section.wrapper {
   display: flex;
   padding: 5px 10px;
   font-size: 14px;
-  background-color: #222222;
+  background-color: #1b1b1b;
   border-radius: 20px;
   color: white;
 }
