@@ -72,11 +72,11 @@ document.addEventListener('DOMContentLoaded', ()=> {
   const mark = document.getElementById("mark");
   const settings = document.getElementById("settings");
 
-  if(pathname == "/pages/settings.html"){
+  if(pathname.includes("/pages/settings.html")){
     settings.classList.add("active");
-  } else if(pathname == "/pages/main.html"){
+  } else if(pathname.includes("/pages/main.html")){
     feed.classList.add("active");
-  } else if (pathname == "/pages/mark.html"){
+  } else if (pathname.includes("/pages/mark.html")){
     mark.classList.add("active");
   }
 });
