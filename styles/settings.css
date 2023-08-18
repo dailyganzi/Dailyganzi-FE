@@ -412,7 +412,7 @@ body {
 .dark-mode .con span {
   color: #f2f2f2;
 }
-.dark-mode i {
+.dark-mode .fa-solid {
   color: #ccc;
 }
 .dark-mode .toggle-switch::before {
