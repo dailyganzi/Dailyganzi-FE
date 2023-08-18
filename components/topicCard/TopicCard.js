@@ -34,7 +34,7 @@ export default class TopicCard extends Component {
     $actions.className = "actions";
 
     const $shareButtonEl = new ShareButton().el;
-    const $markButtonEl = new MarkButton().el;
+    const $markButtonEl = new MarkButton({ data: this.props.data }).el;
 
     $actions.append($shareButtonEl, $markButtonEl);
 
