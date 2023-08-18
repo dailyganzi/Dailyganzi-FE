@@ -3,7 +3,8 @@ const $keywordsList = document.querySelector("#keywords");
 const appendListItem = (target, number, content) => {
   // <a href="url">number. content</a>
   const a = document.createElement("a");
-  a.href = `/pages/search.html?q=${content}`;
+  a.href = '#';
+  // a.href = `/pages/search.html?q=${content}`;
   a.textContent = `${number}. ${content}`;
 
   // <li><a/></li>
