@@ -182,6 +182,10 @@ $toggle-bg-color: #ccc;
       color: $bg-color;
     }
   }
+  
+  i{
+    color: $toggle-bg-color;
+  }
 
   .toggle-switch::before {
     background-color: $dark-field-color;
